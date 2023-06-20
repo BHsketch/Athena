@@ -1,5 +1,6 @@
 #include "../../include/lex/token.h"
+#include "../../include/lex/tag.h"
 
-token::token(int tag): tag(tag) {
-	 
+token::token(TokenTag tag): tag(tag) {
+	 //code to update a symbol table?
 }
