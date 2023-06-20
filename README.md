@@ -1,4 +1,7 @@
-# Athena is an optimizing compiler that implements my own language
+# Athena
+An optimizing compiler that implements a custom language
+
+## Description:
 
 *  At this moment I don't know how it is going to be implemented. The lexer itself seems to have multiple ways to implement it: simply recogniizng characters and hence strings, using regular expressions, converting regular expressions to an NFA and so on. However, using a conversion to a simple transition diagram is the same as an if-else or a switch-case construct because it's not like we're gonna build a graph! once we are on a state, we don't need to keep track of the previous states. We know the rules that get us to the next state and that is enough. So if we have a variable 'state' and a switch case with a case for each state in the transition diagram, that will successfully simulate the transition diagram.
 
