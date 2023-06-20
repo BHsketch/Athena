@@ -1,0 +1,3 @@
+class tag{
+	public:
+}

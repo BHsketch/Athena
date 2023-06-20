@@ -24,6 +24,7 @@
 
 	- Recommended: We combine all transition diagrams into one. (which is what we generally do when we manually create NFA's)
 * **The Knuth-Morris-Pratt algorithm to search for a substring:** 
+* Restricting token tags to only the defined types: in the token class, we will define the 'tag' not as an int, but as an enum type 'tokenTag'. This enum will be defined in a Tag class somewhere, and will list out all the tokens we are allowed to have. In the LLVM source code, the word 'kind' is used to refer to tags (as in, what 'kind' of token this is) and the enum 'TokenKind' Does NOT directly contain a list of tokens, but rather 'populates' itself (from what I've understood) from another file TokenKinds.def (that contains a list of all tokens) using a macro 'TOK'.
 
 ### Symbol table:
 
@@ -54,4 +55,4 @@
 * functions that report errors ? 
 * class definitions for tokens 
 * symbol table implementation (what info do I store?)
-* 
+ 
