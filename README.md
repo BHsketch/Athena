@@ -38,7 +38,7 @@ An optimizing compiler that implements a custom language
 ## Specifications for the language
 
 * Implicit type conversion: between double and int
-* data types: int and double
+* data types: bool, double and string
 * for loop construct
 * If-else construct
 * function definitions
@@ -47,7 +47,22 @@ An optimizing compiler that implements a custom language
 * int func\_name(double x, int y){//code};
 * {defs stmts}: define a block scope
 * expressions -> infix to postfix conversion
-* 
+* sample program:
+
+int fib(int n)
+{
+	if(x<3)
+	{
+		return 1;
+	}else{
+		return (fib(n-1) + fib(n-2));
+	}
+}
+
+int main()
+{
+	consolelog(fib(10));
+}
 
 ## Project structure
 
@@ -59,3 +74,61 @@ An optimizing compiler that implements a custom language
 * class definitions for tokens 
 * symbol table implementation (what info do I store?)
  
+ ## Grammar
+
+ * stmt -> decl | def | controlflow | loop | stmt stmt | { stmt } | expr |**epsilon** 
+ * decl -> **int** id |**double** id
+ * expr -> idexpr | numexpr | parenexpr
+ * parenexp -> (expr)
+ * idexpr -> id | idexpr op expr
+ * numexpr -> num | numexpr op expr |
+ * op -> **\+** |**\*** | **/** | **-** 
+ * 
+
+## Approach
+After a lot of contemplation, staring at my screen, scanning through the LLVM kaleidoscope website, going back and forth through the dragon book, almost committing to reading other resources instead and wondering what I'm doing with my life, I have come to a conclusion that writing a full blown compiler in my first draft (or whatever you wanna call it) of code is too hard to be practical. I'm new to all this, and for someone new to stuff, there sure is a lot to consider. So what I'm gonna do is go in stages. I'm gonna start with a very basic non-turing complete language, and build up from there. 
+One benefit to this approach is that just implementing a basic draft will then give me an idea of whether or not my code is easily expandable i.e. whether or not I've written the code in a way so that it is easy for me to add more features later on.
+A second benefit is I'll get to potentially implement the code in different ways and not having to reinvent the wheel everytime becuase of the sheer number of parameters I've set myself to consider.
+
+### Stage I: declarations and expressions
+I'm gonna try to write a compiler that can convert a code like the following into a syntax tree, and maybe (if I feel like having fun) generate the intermediate code for it:
+
+#### Sample program:
+{
+	double num1;
+	double num2;
+	double expr;
+
+	expr = num1 * 5 + (num2*8)/3;
+}
+
+notice, that this does not have a main function or anything depicting a "starting point", but rather just a block with three kinds of statements:
+* Declarations
+* Expressions (including identifiers and numeric literals)
+* Assignment
+
+#### grammar:
+
+program -> block
+block -> { stmt }
+stmt -> block | decl stmt | assign stmt | expr stmt | phi
+decl -> double id ; | bool id ;
+assign -> id = expr ;
+expr -> term + expr | term - expr | term
+term -> factor * term | factor / term | factor 
+factor -> num | id | (expr) 
+
+Note that the expression is built up in layers so as to separate the precedence of +, - with that of \*, \
+Consider both of those pairs to be left associative
+
+Types of tokens: 
+
+identifiers and literals: num, id, 	<type, value>
+keywords: bool, double				<keyword>
+punctuators: \{, \}, =, ; 			<punctuator>
+ops:  \+, \-, \*, \\,				<ops> 
+
+
+
+
+
