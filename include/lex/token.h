@@ -4,33 +4,33 @@
 
 namespace token{
 
-class token {
+class Token {
 	public:
 	token::TagKind tag; //tag has the type enum
 };
 
-class num_token : public token {
+class NumToken : public Token {
 	public:
 	double num;
 };
 
 
-class id_token : public token {
+class IdToken : public Token {
 	public:
 	std::string identifier;
 };
 
-class punct_token : public token {
+class PunctToken : public Token {
 	public:
 	char punct;
 };
 
-class kw_token : public token {
+class KwToken : public Token {
 	public:
 	std::string keyword;
 };
 
-class op_token : public token {
+class OpToken : public Token {
 	public:
 	char operator;
 };
