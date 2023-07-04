@@ -110,13 +110,13 @@ notice, that this does not have a main function or anything depicting a "startin
 #### grammar:
 
 program -> block
-block -> { stmt }
-stmt -> block | decl stmt | assign stmt | expr stmt | phi
-decl -> double id ; | bool id ;
-assign -> id = expr ;
-expr -> term + expr | term - expr | term
-term -> factor * term | factor / term | factor 
-factor -> num | id | (expr) 
+block -> { stmts }
+stmts -> block | decl stmts | assign stmts | phi		
+decl -> double id ; | bool id ;						class Decl()
+assign -> id = expr ;								class Assign()
+expr -> term + expr | term - expr | term			class Arith()
+term -> factor * term | factor / term | factor 		class Term()
+factor -> num | id | (expr)							class Primitive() 
 
 Note that the expression is built up in layers so as to separate the precedence of +, - with that of \*, \
 Consider both of those pairs to be left associative
