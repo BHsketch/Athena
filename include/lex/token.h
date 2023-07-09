@@ -1,12 +1,12 @@
 # pragma once //preprocessor statement that includes a definition only if it hasn't already been declared before
 #include "tokenKinds.h"
-#include<string>
+#include <string>
 
 namespace token{
 
 class Token {
 	public:
-	token::TagKind tag; //tag has the type enum
+	token::TokenKind tag; //tag has the type enum
 };
 
 class NumToken : public Token {
@@ -32,7 +32,7 @@ class KwToken : public Token {
 
 class OpToken : public Token {
 	public:
-	char operator;
+	char op;
 };
 
 }
