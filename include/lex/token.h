@@ -6,20 +6,28 @@ namespace token{
 
 class Token {
 	public:
-	token::TokenKind tag; //tag has the type enum
+	int tag; //tag has the type enum
+
+	Token(int tag);
 };
 
 class NumToken : public Token {
 	public:
 	double num;
+
+	NumToken(int tag, double num);
 };
 
 
-class IdToken : public Token {
+class WordToken : public Token {
 	public:
-	std::string identifier;
+	std::string word;
+
+	WordToken(int tag, std::string word);
 };
 
+
+/*
 class PunctToken : public Token {
 	public:
 	char punct;
@@ -34,5 +42,7 @@ class OpToken : public Token {
 	public:
 	char op;
 };
+
+*/
 
 }
