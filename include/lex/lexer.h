@@ -12,7 +12,8 @@ class Lexer{
 
 	token::TokenKind tokenKindObj;
 
-	char curChar = '\0';
+	char curChar = ' ';
+	std::string lexemeBuffer = "";
 	int numberOfLines = 0;				
 	
 	std::string fileName;
@@ -31,6 +32,12 @@ class Lexer{
 	token::Token getToken();			//gets the next token from the input stream; contains the 
 										//buffer and file access logic
 	void reserveWordToken(int tag, std::string word);
+
+	void reserveNumToken(int tag, std::string lexeme, double num);
+
+	//TEST FUNCTION
+
+	void printCodeAsTokens();
 };
 
 
