@@ -3,25 +3,34 @@
 #include "./token.h"
 #include <string>
 #include <unordered_map>			
+#include <memory>
 
 class Lexer{
 	public:
 	
-	std::string fileName;
+	//DECLARING VARIABLES 
+
+	token::TokenKind tokenKindObj;
+
 	char curChar = '\0';
 	int numberOfLines = 0;				
-	std::unordered_map<std::string, token::Token> hashMap; 
+	
+	std::string fileName;
+	std::unordered_map<std::string, std::unique_ptr<token::Token> > hashMap; 
 										//Hash map to map lexemes to tokens
 
 	//char inputBuffer1[512];
 	//char inputBuffer2[512];
 										//implement input buffers to avoid a system call for every character
+	//HELPER FUNCTIONS
+
 	Lexer(std::string fileName);
 	
 	char readChar();
 
 	token::Token getToken();			//gets the next token from the input stream; contains the 
 										//buffer and file access logic
+	void reserveWordToken(int tag, std::string word);
 };
 
 
