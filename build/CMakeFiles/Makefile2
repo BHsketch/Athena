@@ -81,12 +81,12 @@ clean: CMakeFiles/Athena.dir/clean
 CMakeFiles/Athena.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=1,2 "Built target Athena"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=1,2,3,4 "Built target Athena"
 .PHONY : CMakeFiles/Athena.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Athena.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Athena.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles 0
 .PHONY : CMakeFiles/Athena.dir/rule

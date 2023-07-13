@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -Werror -std=c++14 -g CMakeFiles/Athena.dir/src/testmain.cpp.o -o Athena 
+/usr/bin/c++  -Wall -Werror -std=c++14 -g CMakeFiles/Athena.dir/src/lex/lexer.cpp.o CMakeFiles/Athena.dir/src/lex/token.cpp.o CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o -o Athena 

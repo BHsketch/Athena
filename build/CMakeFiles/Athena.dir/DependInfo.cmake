@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/bhavya/cosmos/cse/projects/Athena/src/testmain.cpp" "CMakeFiles/Athena.dir/src/testmain.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/testmain.cpp.o.d"
+  "/home/bhavya/cosmos/cse/projects/Athena/src/lex/lexer.cpp" "CMakeFiles/Athena.dir/src/lex/lexer.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/lex/lexer.cpp.o.d"
+  "/home/bhavya/cosmos/cse/projects/Athena/src/lex/token.cpp" "CMakeFiles/Athena.dir/src/lex/token.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/lex/token.cpp.o.d"
+  "/home/bhavya/cosmos/cse/projects/Athena/src/lex/tokenKinds.cpp" "CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o.d"
   )
 
 # Targets to which this target links.

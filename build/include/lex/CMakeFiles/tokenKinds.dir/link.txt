@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtokenKinds.a CMakeFiles/tokenKinds.dir/__/__/src/lex/tokenKinds.cpp.o
+/usr/bin/ranlib libtokenKinds.a

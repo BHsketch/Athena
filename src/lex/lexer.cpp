@@ -1,4 +1,5 @@
 #include "../../include/lex/lexer.h"
+#include "../../include/lex/token.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -135,7 +136,9 @@ token::Token Lexer::getToken()
 
 		readChar();
 	}
-
+	
+	token::Token returnVal(255);
+	return returnVal;
 }
 
 

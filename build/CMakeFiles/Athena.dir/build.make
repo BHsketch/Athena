@@ -69,31 +69,63 @@ include CMakeFiles/Athena.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Athena.dir/flags.make
 
-CMakeFiles/Athena.dir/src/testmain.cpp.o: CMakeFiles/Athena.dir/flags.make
-CMakeFiles/Athena.dir/src/testmain.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/testmain.cpp
-CMakeFiles/Athena.dir/src/testmain.cpp.o: CMakeFiles/Athena.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Athena.dir/src/testmain.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Athena.dir/src/testmain.cpp.o -MF CMakeFiles/Athena.dir/src/testmain.cpp.o.d -o CMakeFiles/Athena.dir/src/testmain.cpp.o -c /home/bhavya/cosmos/cse/projects/Athena/src/testmain.cpp
+CMakeFiles/Athena.dir/src/lex/lexer.cpp.o: CMakeFiles/Athena.dir/flags.make
+CMakeFiles/Athena.dir/src/lex/lexer.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/lex/lexer.cpp
+CMakeFiles/Athena.dir/src/lex/lexer.cpp.o: CMakeFiles/Athena.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Athena.dir/src/lex/lexer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Athena.dir/src/lex/lexer.cpp.o -MF CMakeFiles/Athena.dir/src/lex/lexer.cpp.o.d -o CMakeFiles/Athena.dir/src/lex/lexer.cpp.o -c /home/bhavya/cosmos/cse/projects/Athena/src/lex/lexer.cpp
 
-CMakeFiles/Athena.dir/src/testmain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Athena.dir/src/testmain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bhavya/cosmos/cse/projects/Athena/src/testmain.cpp > CMakeFiles/Athena.dir/src/testmain.cpp.i
+CMakeFiles/Athena.dir/src/lex/lexer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Athena.dir/src/lex/lexer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bhavya/cosmos/cse/projects/Athena/src/lex/lexer.cpp > CMakeFiles/Athena.dir/src/lex/lexer.cpp.i
 
-CMakeFiles/Athena.dir/src/testmain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Athena.dir/src/testmain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bhavya/cosmos/cse/projects/Athena/src/testmain.cpp -o CMakeFiles/Athena.dir/src/testmain.cpp.s
+CMakeFiles/Athena.dir/src/lex/lexer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Athena.dir/src/lex/lexer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bhavya/cosmos/cse/projects/Athena/src/lex/lexer.cpp -o CMakeFiles/Athena.dir/src/lex/lexer.cpp.s
+
+CMakeFiles/Athena.dir/src/lex/token.cpp.o: CMakeFiles/Athena.dir/flags.make
+CMakeFiles/Athena.dir/src/lex/token.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/lex/token.cpp
+CMakeFiles/Athena.dir/src/lex/token.cpp.o: CMakeFiles/Athena.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Athena.dir/src/lex/token.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Athena.dir/src/lex/token.cpp.o -MF CMakeFiles/Athena.dir/src/lex/token.cpp.o.d -o CMakeFiles/Athena.dir/src/lex/token.cpp.o -c /home/bhavya/cosmos/cse/projects/Athena/src/lex/token.cpp
+
+CMakeFiles/Athena.dir/src/lex/token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Athena.dir/src/lex/token.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bhavya/cosmos/cse/projects/Athena/src/lex/token.cpp > CMakeFiles/Athena.dir/src/lex/token.cpp.i
+
+CMakeFiles/Athena.dir/src/lex/token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Athena.dir/src/lex/token.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bhavya/cosmos/cse/projects/Athena/src/lex/token.cpp -o CMakeFiles/Athena.dir/src/lex/token.cpp.s
+
+CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o: CMakeFiles/Athena.dir/flags.make
+CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/lex/tokenKinds.cpp
+CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o: CMakeFiles/Athena.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o -MF CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o.d -o CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o -c /home/bhavya/cosmos/cse/projects/Athena/src/lex/tokenKinds.cpp
+
+CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bhavya/cosmos/cse/projects/Athena/src/lex/tokenKinds.cpp > CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.i
+
+CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bhavya/cosmos/cse/projects/Athena/src/lex/tokenKinds.cpp -o CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.s
 
 # Object files for target Athena
 Athena_OBJECTS = \
-"CMakeFiles/Athena.dir/src/testmain.cpp.o"
+"CMakeFiles/Athena.dir/src/lex/lexer.cpp.o" \
+"CMakeFiles/Athena.dir/src/lex/token.cpp.o" \
+"CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o"
 
 # External object files for target Athena
 Athena_EXTERNAL_OBJECTS =
 
-Athena: CMakeFiles/Athena.dir/src/testmain.cpp.o
+Athena: CMakeFiles/Athena.dir/src/lex/lexer.cpp.o
+Athena: CMakeFiles/Athena.dir/src/lex/token.cpp.o
+Athena: CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o
 Athena: CMakeFiles/Athena.dir/build.make
 Athena: CMakeFiles/Athena.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Athena"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bhavya/cosmos/cse/projects/Athena/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Athena"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Athena.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

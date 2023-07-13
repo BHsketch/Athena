@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/bhavya/cosmos/cse/projects/Athena/include/lex
 
 CXX_FLAGS =  -Wall -Werror -std=c++14 -g
 

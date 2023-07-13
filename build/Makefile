@@ -129,29 +129,77 @@ Athena/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/build
 .PHONY : Athena/fast
 
-src/testmain.o: src/testmain.cpp.o
-.PHONY : src/testmain.o
+src/lex/lexer.o: src/lex/lexer.cpp.o
+.PHONY : src/lex/lexer.o
 
 # target to build an object file
-src/testmain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/testmain.cpp.o
-.PHONY : src/testmain.cpp.o
+src/lex/lexer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/lexer.cpp.o
+.PHONY : src/lex/lexer.cpp.o
 
-src/testmain.i: src/testmain.cpp.i
-.PHONY : src/testmain.i
+src/lex/lexer.i: src/lex/lexer.cpp.i
+.PHONY : src/lex/lexer.i
 
 # target to preprocess a source file
-src/testmain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/testmain.cpp.i
-.PHONY : src/testmain.cpp.i
+src/lex/lexer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/lexer.cpp.i
+.PHONY : src/lex/lexer.cpp.i
 
-src/testmain.s: src/testmain.cpp.s
-.PHONY : src/testmain.s
+src/lex/lexer.s: src/lex/lexer.cpp.s
+.PHONY : src/lex/lexer.s
 
 # target to generate assembly for a file
-src/testmain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/testmain.cpp.s
-.PHONY : src/testmain.cpp.s
+src/lex/lexer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/lexer.cpp.s
+.PHONY : src/lex/lexer.cpp.s
+
+src/lex/token.o: src/lex/token.cpp.o
+.PHONY : src/lex/token.o
+
+# target to build an object file
+src/lex/token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/token.cpp.o
+.PHONY : src/lex/token.cpp.o
+
+src/lex/token.i: src/lex/token.cpp.i
+.PHONY : src/lex/token.i
+
+# target to preprocess a source file
+src/lex/token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/token.cpp.i
+.PHONY : src/lex/token.cpp.i
+
+src/lex/token.s: src/lex/token.cpp.s
+.PHONY : src/lex/token.s
+
+# target to generate assembly for a file
+src/lex/token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/token.cpp.s
+.PHONY : src/lex/token.cpp.s
+
+src/lex/tokenKinds.o: src/lex/tokenKinds.cpp.o
+.PHONY : src/lex/tokenKinds.o
+
+# target to build an object file
+src/lex/tokenKinds.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o
+.PHONY : src/lex/tokenKinds.cpp.o
+
+src/lex/tokenKinds.i: src/lex/tokenKinds.cpp.i
+.PHONY : src/lex/tokenKinds.i
+
+# target to preprocess a source file
+src/lex/tokenKinds.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.i
+.PHONY : src/lex/tokenKinds.cpp.i
+
+src/lex/tokenKinds.s: src/lex/tokenKinds.cpp.s
+.PHONY : src/lex/tokenKinds.s
+
+# target to generate assembly for a file
+src/lex/tokenKinds.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.s
+.PHONY : src/lex/tokenKinds.cpp.s
 
 # Help Target
 help:
@@ -162,9 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Athena"
-	@echo "... src/testmain.o"
-	@echo "... src/testmain.i"
-	@echo "... src/testmain.s"
+	@echo "... src/lex/lexer.o"
+	@echo "... src/lex/lexer.i"
+	@echo "... src/lex/lexer.s"
+	@echo "... src/lex/token.o"
+	@echo "... src/lex/token.i"
+	@echo "... src/lex/token.s"
+	@echo "... src/lex/tokenKinds.o"
+	@echo "... src/lex/tokenKinds.i"
+	@echo "... src/lex/tokenKinds.s"
 .PHONY : help
 
 
