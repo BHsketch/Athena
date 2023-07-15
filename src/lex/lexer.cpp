@@ -48,20 +48,20 @@ char Lexer::readChar()
 
 void Lexer::reserveWordToken(int tag, std::string word)
 {
-	hashMap[word] = std::make_unique<token::WordToken>(tag, word);
+	hashMap[word] = std::make_shared<token::WordToken>(tag, word);
 															//map the lexeme to be reserved to it's token
 }
 
 void Lexer::reserveNumToken(int tag, std::string lexeme, double num)
 {
-	hashMap[lexeme] = std::make_unique<token::NumToken>(tag, num);
+	hashMap[lexeme] = std::make_shared<token::NumToken>(tag, num);
 															//need lexeme here, because unlike word tokens, the lexeme is not the smae
 															//as what is stored in the token.
 }
 
 //FUNCTION ACCESSED BY PARSER
 
-token::Token Lexer::getToken()
+std::shared_ptr<token::Token> Lexer::getToken()
 {
 		
 	while(std::isspace(static_cast<unsigned char>(curChar)))
@@ -135,10 +135,10 @@ token::Token Lexer::getToken()
 		}
 
 		readChar();
+		lexemeBuffer.pop_back();
 	}
 	
-	token::Token returnVal(255);
-	return returnVal;
+	return hashMap[lexemeBuffer];
 }
 
 
@@ -150,14 +150,13 @@ void Lexer::printCodeAsTokens()
 	}
 }
 
-
+/*
 int main()
 {
 	Lexer lexer("test.txt");
 	
 	lexer.printCodeAsTokens();
 
-	/*
 	while(lexer.readChar())
 	{
 		std::cout<<lexer.curChar;
@@ -169,5 +168,5 @@ int main()
 	std::shared_ptr<token::WordToken> bool_word_token = std::dynamic_pointer_cast<token::WordToken>(bool_token);
 
 	std::cout<<"reserved token for bool: < " <<	bool_word_token->tag <<", "<< bool_word_token->word <<" >\n";
-	*/
 }
+*/

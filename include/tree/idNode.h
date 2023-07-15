@@ -2,7 +2,7 @@
 #include <memory>
 #include <string>
 
-class IdNode : public exprNode(std::string id){
+class IdNode : public ExprNode{
 	public:
 
 	std::string id = "";

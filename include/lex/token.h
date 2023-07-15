@@ -11,6 +11,8 @@ class Token {
 	Token(int tag);
 
 	virtual void printToken();
+	virtual double getNumAttribute();
+	virtual std::string getAttribute();
 };
 
 class NumToken : public Token {
@@ -22,6 +24,8 @@ class NumToken : public Token {
 	NumToken(int tag, double num);
 
 	void printToken() override;
+	double getNumAttribute() override;
+
 };
 
 
@@ -32,6 +36,7 @@ class WordToken : public Token {
 	WordToken(int tag, std::string word);
 
 	void printToken() override;
+	std::string getAttribute() override;
 };
 
 

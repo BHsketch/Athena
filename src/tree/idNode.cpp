@@ -2,5 +2,5 @@
 #include <memory>
 #include <string>
 
-IdNode::IdNode(std::string id) id(id) {};
+IdNode::IdNode(std::string id) : id(id) {};
 

@@ -201,6 +201,318 @@ src/lex/tokenKinds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.s
 .PHONY : src/lex/tokenKinds.cpp.s
 
+src/parse/env.o: src/parse/env.cpp.o
+.PHONY : src/parse/env.o
+
+# target to build an object file
+src/parse/env.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/env.cpp.o
+.PHONY : src/parse/env.cpp.o
+
+src/parse/env.i: src/parse/env.cpp.i
+.PHONY : src/parse/env.i
+
+# target to preprocess a source file
+src/parse/env.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/env.cpp.i
+.PHONY : src/parse/env.cpp.i
+
+src/parse/env.s: src/parse/env.cpp.s
+.PHONY : src/parse/env.s
+
+# target to generate assembly for a file
+src/parse/env.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/env.cpp.s
+.PHONY : src/parse/env.cpp.s
+
+src/parse/parser.o: src/parse/parser.cpp.o
+.PHONY : src/parse/parser.o
+
+# target to build an object file
+src/parse/parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/parser.cpp.o
+.PHONY : src/parse/parser.cpp.o
+
+src/parse/parser.i: src/parse/parser.cpp.i
+.PHONY : src/parse/parser.i
+
+# target to preprocess a source file
+src/parse/parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/parser.cpp.i
+.PHONY : src/parse/parser.cpp.i
+
+src/parse/parser.s: src/parse/parser.cpp.s
+.PHONY : src/parse/parser.s
+
+# target to generate assembly for a file
+src/parse/parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/parser.cpp.s
+.PHONY : src/parse/parser.cpp.s
+
+src/parse/symbol.o: src/parse/symbol.cpp.o
+.PHONY : src/parse/symbol.o
+
+# target to build an object file
+src/parse/symbol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/symbol.cpp.o
+.PHONY : src/parse/symbol.cpp.o
+
+src/parse/symbol.i: src/parse/symbol.cpp.i
+.PHONY : src/parse/symbol.i
+
+# target to preprocess a source file
+src/parse/symbol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/symbol.cpp.i
+.PHONY : src/parse/symbol.cpp.i
+
+src/parse/symbol.s: src/parse/symbol.cpp.s
+.PHONY : src/parse/symbol.s
+
+# target to generate assembly for a file
+src/parse/symbol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/parse/symbol.cpp.s
+.PHONY : src/parse/symbol.cpp.s
+
+src/tree/assignNode.o: src/tree/assignNode.cpp.o
+.PHONY : src/tree/assignNode.o
+
+# target to build an object file
+src/tree/assignNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/assignNode.cpp.o
+.PHONY : src/tree/assignNode.cpp.o
+
+src/tree/assignNode.i: src/tree/assignNode.cpp.i
+.PHONY : src/tree/assignNode.i
+
+# target to preprocess a source file
+src/tree/assignNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/assignNode.cpp.i
+.PHONY : src/tree/assignNode.cpp.i
+
+src/tree/assignNode.s: src/tree/assignNode.cpp.s
+.PHONY : src/tree/assignNode.s
+
+# target to generate assembly for a file
+src/tree/assignNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/assignNode.cpp.s
+.PHONY : src/tree/assignNode.cpp.s
+
+src/tree/blockNode.o: src/tree/blockNode.cpp.o
+.PHONY : src/tree/blockNode.o
+
+# target to build an object file
+src/tree/blockNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o
+.PHONY : src/tree/blockNode.cpp.o
+
+src/tree/blockNode.i: src/tree/blockNode.cpp.i
+.PHONY : src/tree/blockNode.i
+
+# target to preprocess a source file
+src/tree/blockNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/blockNode.cpp.i
+.PHONY : src/tree/blockNode.cpp.i
+
+src/tree/blockNode.s: src/tree/blockNode.cpp.s
+.PHONY : src/tree/blockNode.s
+
+# target to generate assembly for a file
+src/tree/blockNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/blockNode.cpp.s
+.PHONY : src/tree/blockNode.cpp.s
+
+src/tree/declNode.o: src/tree/declNode.cpp.o
+.PHONY : src/tree/declNode.o
+
+# target to build an object file
+src/tree/declNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/declNode.cpp.o
+.PHONY : src/tree/declNode.cpp.o
+
+src/tree/declNode.i: src/tree/declNode.cpp.i
+.PHONY : src/tree/declNode.i
+
+# target to preprocess a source file
+src/tree/declNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/declNode.cpp.i
+.PHONY : src/tree/declNode.cpp.i
+
+src/tree/declNode.s: src/tree/declNode.cpp.s
+.PHONY : src/tree/declNode.s
+
+# target to generate assembly for a file
+src/tree/declNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/declNode.cpp.s
+.PHONY : src/tree/declNode.cpp.s
+
+src/tree/exprNode.o: src/tree/exprNode.cpp.o
+.PHONY : src/tree/exprNode.o
+
+# target to build an object file
+src/tree/exprNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o
+.PHONY : src/tree/exprNode.cpp.o
+
+src/tree/exprNode.i: src/tree/exprNode.cpp.i
+.PHONY : src/tree/exprNode.i
+
+# target to preprocess a source file
+src/tree/exprNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/exprNode.cpp.i
+.PHONY : src/tree/exprNode.cpp.i
+
+src/tree/exprNode.s: src/tree/exprNode.cpp.s
+.PHONY : src/tree/exprNode.s
+
+# target to generate assembly for a file
+src/tree/exprNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/exprNode.cpp.s
+.PHONY : src/tree/exprNode.cpp.s
+
+src/tree/idNode.o: src/tree/idNode.cpp.o
+.PHONY : src/tree/idNode.o
+
+# target to build an object file
+src/tree/idNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/idNode.cpp.o
+.PHONY : src/tree/idNode.cpp.o
+
+src/tree/idNode.i: src/tree/idNode.cpp.i
+.PHONY : src/tree/idNode.i
+
+# target to preprocess a source file
+src/tree/idNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/idNode.cpp.i
+.PHONY : src/tree/idNode.cpp.i
+
+src/tree/idNode.s: src/tree/idNode.cpp.s
+.PHONY : src/tree/idNode.s
+
+# target to generate assembly for a file
+src/tree/idNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/idNode.cpp.s
+.PHONY : src/tree/idNode.cpp.s
+
+src/tree/numNode.o: src/tree/numNode.cpp.o
+.PHONY : src/tree/numNode.o
+
+# target to build an object file
+src/tree/numNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/numNode.cpp.o
+.PHONY : src/tree/numNode.cpp.o
+
+src/tree/numNode.i: src/tree/numNode.cpp.i
+.PHONY : src/tree/numNode.i
+
+# target to preprocess a source file
+src/tree/numNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/numNode.cpp.i
+.PHONY : src/tree/numNode.cpp.i
+
+src/tree/numNode.s: src/tree/numNode.cpp.s
+.PHONY : src/tree/numNode.s
+
+# target to generate assembly for a file
+src/tree/numNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/numNode.cpp.s
+.PHONY : src/tree/numNode.cpp.s
+
+src/tree/opexprNode.o: src/tree/opexprNode.cpp.o
+.PHONY : src/tree/opexprNode.o
+
+# target to build an object file
+src/tree/opexprNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o
+.PHONY : src/tree/opexprNode.cpp.o
+
+src/tree/opexprNode.i: src/tree/opexprNode.cpp.i
+.PHONY : src/tree/opexprNode.i
+
+# target to preprocess a source file
+src/tree/opexprNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.i
+.PHONY : src/tree/opexprNode.cpp.i
+
+src/tree/opexprNode.s: src/tree/opexprNode.cpp.s
+.PHONY : src/tree/opexprNode.s
+
+# target to generate assembly for a file
+src/tree/opexprNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.s
+.PHONY : src/tree/opexprNode.cpp.s
+
+src/tree/seqNode.o: src/tree/seqNode.cpp.o
+.PHONY : src/tree/seqNode.o
+
+# target to build an object file
+src/tree/seqNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o
+.PHONY : src/tree/seqNode.cpp.o
+
+src/tree/seqNode.i: src/tree/seqNode.cpp.i
+.PHONY : src/tree/seqNode.i
+
+# target to preprocess a source file
+src/tree/seqNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/seqNode.cpp.i
+.PHONY : src/tree/seqNode.cpp.i
+
+src/tree/seqNode.s: src/tree/seqNode.cpp.s
+.PHONY : src/tree/seqNode.s
+
+# target to generate assembly for a file
+src/tree/seqNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/seqNode.cpp.s
+.PHONY : src/tree/seqNode.cpp.s
+
+src/tree/stmtNode.o: src/tree/stmtNode.cpp.o
+.PHONY : src/tree/stmtNode.o
+
+# target to build an object file
+src/tree/stmtNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o
+.PHONY : src/tree/stmtNode.cpp.o
+
+src/tree/stmtNode.i: src/tree/stmtNode.cpp.i
+.PHONY : src/tree/stmtNode.i
+
+# target to preprocess a source file
+src/tree/stmtNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.i
+.PHONY : src/tree/stmtNode.cpp.i
+
+src/tree/stmtNode.s: src/tree/stmtNode.cpp.s
+.PHONY : src/tree/stmtNode.s
+
+# target to generate assembly for a file
+src/tree/stmtNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.s
+.PHONY : src/tree/stmtNode.cpp.s
+
+src/tree/treeNode.o: src/tree/treeNode.cpp.o
+.PHONY : src/tree/treeNode.o
+
+# target to build an object file
+src/tree/treeNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o
+.PHONY : src/tree/treeNode.cpp.o
+
+src/tree/treeNode.i: src/tree/treeNode.cpp.i
+.PHONY : src/tree/treeNode.i
+
+# target to preprocess a source file
+src/tree/treeNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/treeNode.cpp.i
+.PHONY : src/tree/treeNode.cpp.i
+
+src/tree/treeNode.s: src/tree/treeNode.cpp.s
+.PHONY : src/tree/treeNode.s
+
+# target to generate assembly for a file
+src/tree/treeNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/tree/treeNode.cpp.s
+.PHONY : src/tree/treeNode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +531,45 @@ help:
 	@echo "... src/lex/tokenKinds.o"
 	@echo "... src/lex/tokenKinds.i"
 	@echo "... src/lex/tokenKinds.s"
+	@echo "... src/parse/env.o"
+	@echo "... src/parse/env.i"
+	@echo "... src/parse/env.s"
+	@echo "... src/parse/parser.o"
+	@echo "... src/parse/parser.i"
+	@echo "... src/parse/parser.s"
+	@echo "... src/parse/symbol.o"
+	@echo "... src/parse/symbol.i"
+	@echo "... src/parse/symbol.s"
+	@echo "... src/tree/assignNode.o"
+	@echo "... src/tree/assignNode.i"
+	@echo "... src/tree/assignNode.s"
+	@echo "... src/tree/blockNode.o"
+	@echo "... src/tree/blockNode.i"
+	@echo "... src/tree/blockNode.s"
+	@echo "... src/tree/declNode.o"
+	@echo "... src/tree/declNode.i"
+	@echo "... src/tree/declNode.s"
+	@echo "... src/tree/exprNode.o"
+	@echo "... src/tree/exprNode.i"
+	@echo "... src/tree/exprNode.s"
+	@echo "... src/tree/idNode.o"
+	@echo "... src/tree/idNode.i"
+	@echo "... src/tree/idNode.s"
+	@echo "... src/tree/numNode.o"
+	@echo "... src/tree/numNode.i"
+	@echo "... src/tree/numNode.s"
+	@echo "... src/tree/opexprNode.o"
+	@echo "... src/tree/opexprNode.i"
+	@echo "... src/tree/opexprNode.s"
+	@echo "... src/tree/seqNode.o"
+	@echo "... src/tree/seqNode.i"
+	@echo "... src/tree/seqNode.s"
+	@echo "... src/tree/stmtNode.o"
+	@echo "... src/tree/stmtNode.i"
+	@echo "... src/tree/stmtNode.s"
+	@echo "... src/tree/treeNode.o"
+	@echo "... src/tree/treeNode.i"
+	@echo "... src/tree/treeNode.s"
 .PHONY : help
 
 

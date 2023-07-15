@@ -17,7 +17,7 @@ class Lexer{
 	int numberOfLines = 0;				
 	
 	std::string fileName;
-	std::unordered_map<std::string, std::unique_ptr<token::Token> > hashMap; 
+	std::unordered_map<std::string, std::shared_ptr<token::Token> > hashMap; 
 										//Hash map to map lexemes to tokens
 
 	//char inputBuffer1[512];
@@ -29,7 +29,7 @@ class Lexer{
 	
 	char readChar();
 
-	token::Token getToken();			//gets the next token from the input stream; contains the 
+	std::shared_ptr<token::Token> getToken();			//gets the next token from the input stream; contains the 
 										//buffer and file access logic
 	void reserveWordToken(int tag, std::string word);
 

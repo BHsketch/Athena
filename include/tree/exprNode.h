@@ -3,7 +3,7 @@
 #include <memory>                                                               //unique pointers
 #include "treeNode.h"
 
-class ExprNode: public TreeNode(){
+class ExprNode: public TreeNode{
         public:
 };
 

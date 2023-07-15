@@ -2,10 +2,10 @@
 #include "./stmtNode.h"
 #include <memory>
 
-class DeclNode : public StmtNode(std::unique_ptr<TreeNode> id){
+class DeclNode : public StmtNode{
         public:
-        std::unique_ptr<TreeNode> idChild = nullptr;
+        std::shared_ptr<TreeNode> idChild = nullptr;
 
-        DeclNode(std::unique_ptr<TreeNode> id);
+        DeclNode(std::shared_ptr<TreeNode> id);
 };
 

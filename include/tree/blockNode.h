@@ -2,9 +2,9 @@
 #include "./stmtNode.h"
 #include <memory>
 
-class BlockNode : public StmtNode(std::unique_ptr<TreeNode> stmt){
+class BlockNode : public StmtNode{
 	public:
-	std::unique_ptr<TreeNode> stmtChild = nullptr;
+	std::shared_ptr<TreeNode> stmtChild = nullptr;
 
-	BlockNode(std::unique_ptr<TreeNode> stmt);
+	BlockNode(std::shared_ptr<TreeNode> stmt);
 };
