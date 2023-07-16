@@ -29,9 +29,25 @@ void Parser::getToken()
 	}
 }
 
-void Parser::logError(int lineNumber, std::string expectedTerminal)
+void Parser::logError(int errCode, int lineNumber, std::string expectedTerminal, std::string errorString, std::string varName)
 {
-	std::cout<<"Expected '"<<expectedTerminal<<"' at line "<<lineNumber<<"."<<"\n";
+	errorCount++;
+
+	if(errorString == "")
+	{
+	}else{
+		std::cerr<<errorString<<"\n";
+	}
+
+	switch(errCode)
+	{
+		case 0:
+			std::cerr<<"Expected '"<<expectedTerminal<<"' at line "<<lineNumber<<"."<<"\n";
+			break;
+		case 1:
+			std::cerr<<"multiple declarations for variable '"<<varName<<"' at line "<<lineNumber<<".\n";
+			break;
+	}
 }
 
 bool Parser::matchLookahead(std::string terminal)
@@ -39,6 +55,13 @@ bool Parser::matchLookahead(std::string terminal)
 	//std::cout<<"matching "<<terminal<<"\n";
 													//checks if the already read token is the same as the
 													//terminal string provided in the arguments
+	if(curToken == nullptr)
+	{
+		logError(0, lexer->numberOfLines, terminal, "", "");
+		lexer->spitToken();
+		return false;
+	}
+
 	std::string curTokenAttr = curToken->getAttribute();
 
 	if(terminal == (curTokenAttr))
@@ -46,18 +69,25 @@ bool Parser::matchLookahead(std::string terminal)
 		//std::cout<<"matched\n";
 		return true;
 	}else{
-		logError(lexer->numberOfLines, terminal);
+		logError(0, lexer->numberOfLines, terminal, "", "");
 													//Errors will be logged only (I think) due to single
 													//character tokens like parenthesis or semicolons
 													//hence we can assume it's gonna be a word token and a string
-		errorIndicator = true;
+		lexer->spitToken();
+		//errorIndicator = true;
 		return false;
 	}
 }
 
+void Parser::printConclusion()
+{
+	std::cout<<"Program parsed with "<<errorCount<<" errors.\n";
+}
+
+
 std::shared_ptr<TreeNode> Parser::block() 
 {
-	std::cout<<"in block\n";
+	//std::cout<<"in block\n";
 
 	std::shared_ptr<TreeNode> stmtsChild;
 	std::shared_ptr<Env> prevScope;
@@ -78,11 +108,12 @@ std::shared_ptr<TreeNode> Parser::block()
 
 	symbolTable = prevScope;
 											//Once this scope ends, go back to the previous scope
-	
+	/*
 	if(errorIndicator)
 	{
 		return nullptr;
 	}
+	*/
 
 	std::shared_ptr<BlockNode> blockNode = std::make_shared<BlockNode>(stmtsChild);
 	return blockNode;
@@ -91,7 +122,7 @@ std::shared_ptr<TreeNode> Parser::block()
 
 std::shared_ptr<TreeNode> Parser::decl()
 {
-	std::cout<<"in decl\n";
+	//std::cout<<"in decl\n";
 
 	std::string varName;
 	std::shared_ptr<Symbol> symbol; 
@@ -111,8 +142,7 @@ std::shared_ptr<TreeNode> Parser::decl()
 	
 	if((symbolTable->symbolMap).find(curToken->getAttribute()) != (symbolTable->symbolMap).end())
 	{
-		//PUT ANOTHER LOG ERROR FUNCTION
-		std::cout<<"multiple declarations for variable "<<curToken->getAttribute()<<"\n";
+		logError(1, lexer->numberOfLines, "", "", curToken->getAttribute());
 	}
 
 	(symbolTable->symbolMap)[curToken->getAttribute()] = symbol;
@@ -131,7 +161,7 @@ std::shared_ptr<TreeNode> Parser::decl()
 
 std::shared_ptr<TreeNode> Parser::factor()
 {
-	std::cout<<"in factor\n";
+	//std::cout<<"in factor\n";
 
 	std::shared_ptr<TreeNode> child;
 
@@ -155,7 +185,7 @@ std::shared_ptr<TreeNode> Parser::factor()
 
 std::shared_ptr<TreeNode> Parser::term()
 {
-	std::cout<<"in term\n";
+	//std::cout<<"in term\n";
 
 	std::shared_ptr<TreeNode> factorChild;
 	std::shared_ptr<TreeNode> termChild;
@@ -183,7 +213,7 @@ std::shared_ptr<TreeNode> Parser::term()
 
 std::shared_ptr<TreeNode> Parser::expr()
 {
-	std::cout<<"in expr\n";
+	//std::cout<<"in expr\n";
 	
 	std::shared_ptr<TreeNode> termChild;
 	std::shared_ptr<TreeNode> exprChild;
@@ -212,7 +242,7 @@ std::shared_ptr<TreeNode> Parser::expr()
 
 std::shared_ptr<TreeNode> Parser::assign()
 {
-	std::cout<<"in assign\n";
+	//std::cout<<"in assign\n";
 
 	std::shared_ptr<IdNode> idChild = std::make_shared<IdNode>(curToken->getAttribute());	
 	std::shared_ptr<TreeNode> exprChild;
@@ -235,7 +265,7 @@ std::shared_ptr<TreeNode> Parser::assign()
 
 std::shared_ptr<TreeNode> Parser::stmts()
 {
-	std::cout<<"in stmts\n";
+	//std::cout<<"in stmts\n";
 
 	std::shared_ptr<TreeNode> child1;
 	std::shared_ptr<TreeNode> child2;
@@ -292,5 +322,5 @@ int main()
 	
 	parser.getToken();
 	parser.program = parser.block();
-	
+	parser.printConclusion();
 }

@@ -129,6 +129,12 @@ punctuators: \{, \}, =, ; 			<punctuator>
 ops:  \+, \-, \*, \\,				<ops> 
 
 
+#### Logging Errors
 
+Types of errors:
+* expected token not present
+* variable re declaration
 
+We need to do an error count - something that will be incremented by the logError function - and also we need the logError function to log other kinds of errors (or  we might just need two kinds of logError functions)
 
+Another aspect to consider is that if we get an "expected terminal" error, we might wanna spit that token back out so that the rest of the program may be parsed correctly. However, we cannot do that so easily if we're reading tokens directly from a file. So the double-buffer system should be very helpful in this case.

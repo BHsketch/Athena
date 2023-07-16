@@ -1,5 +1,9 @@
 {
 	bool var;
-	double var1;
-	var = var1;
+
+	{
+		double var
+		bool var1;
+		var = var1 + 5* 25;
+	}
 }

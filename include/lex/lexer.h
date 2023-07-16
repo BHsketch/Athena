@@ -20,8 +20,12 @@ class Lexer{
 	std::unordered_map<std::string, std::shared_ptr<token::Token> > hashMap; 
 										//Hash map to map lexemes to tokens
 
-	//char inputBuffer1[512];
-	//char inputBuffer2[512];
+	char inputBuffer0[512] = {'\0'};
+	char inputBuffer1[512] = {'\0'};
+	char *inputBuffer[2] = { &(inputBuffer0[0]), &(inputBuffer1[0]) };
+	bool curBuffer = 1;
+	int bufferIndex = 511;
+	int tokenLength;
 										//implement input buffers to avoid a system call for every character
 	//HELPER FUNCTIONS
 
@@ -30,7 +34,8 @@ class Lexer{
 	char readChar();
 
 	std::shared_ptr<token::Token> getToken();			//gets the next token from the input stream; contains the 
-										//buffer and file access logic
+	void spitToken();
+
 	void reserveWordToken(int tag, std::string word);
 
 	void reserveNumToken(int tag, std::string lexeme, double num);

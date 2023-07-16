@@ -20,6 +20,7 @@ class Parser{
 	//end of useful variables
 	
 	bool errorIndicator = false;
+	int errorCount = 0;
 		
 	std::shared_ptr<Env> symbolTable = nullptr;
 
@@ -28,7 +29,10 @@ class Parser{
 	void getToken();													//calls get token from the parser and assigns the result to currentToken
 																		//this is so that we don't have to do the assignment ourselves everytime we
 																		//need one
-	void logError(int lineNumber, std::string expectedTerminal);					//logs errors. Who wants to write std::cout again and again XD
+	void logError(int errCode, int lineNumber, std::string expectedTerminal, std::string errorString, std::string varName);					
+																		//logs errors. Who wants to write std::cout again and again XD
+	void printConclusion();
+																		//if error string is not "", an error other than "expected terminal" has occured, and so we must address that with this error string
 	
 	bool matchLookahead(std::string terminal);							//matches the input terminal string with the lexeme in currentToken
 

@@ -28,8 +28,51 @@ Lexer::Lexer(std::string fileName) : fileName(fileName){
 
 char Lexer::readChar()
 {
+	tokenLength++;
+
 	static std::ifstream wiseFile(fileName);				//static so that each call continues from where the last call left off
 	
+		
+	if(bufferIndex >= 511){
+
+		curBuffer = !curBuffer;
+		
+		int i = 0;
+		if(wiseFile.is_open())
+		{
+			while( (i<512)&&(curChar) )
+			{
+				wiseFile.get(inputBuffer[curBuffer][i]);
+				curChar = inputBuffer[curBuffer][i];
+				//std::cout<<curChar<<"\n";
+				i++;
+			}
+
+		}
+		
+		bufferIndex = -1;
+	}
+
+	bufferIndex++;
+															//If end of buffer is reached
+															//switch buffers and fill the other one by
+															//reading from the file
+	curChar = inputBuffer[curBuffer][bufferIndex];
+
+	if(curChar)
+	{
+		lexemeBuffer.push_back(curChar);
+		return curChar;
+	}else{
+		wiseFile.close();
+		curChar = '\0';
+		return '\0';
+	}
+															//then while the input buffer isn't over
+															//AND the program isn't over
+															//get and return a character from the buffer
+
+/*
 	if(wiseFile.is_open()){
 	
 		if(wiseFile.get(curChar))
@@ -42,6 +85,7 @@ char Lexer::readChar()
 			return '\0';
 		}
 	}
+	*/
 
 	return curChar;
 }
@@ -63,7 +107,8 @@ void Lexer::reserveNumToken(int tag, std::string lexeme, double num)
 
 std::shared_ptr<token::Token> Lexer::getToken()
 {
-		
+	tokenLength = 0;
+
 	while(std::isspace(static_cast<unsigned char>(curChar)))
 	{
 		if(curChar == '\n')
@@ -141,6 +186,15 @@ std::shared_ptr<token::Token> Lexer::getToken()
 	return hashMap[lexemeBuffer];
 }
 
+void Lexer::spitToken()
+{
+	if(bufferIndex < tokenLength)
+	{
+		curBuffer = !curBuffer;
+	}
+
+	bufferIndex = (bufferIndex - tokenLength + 512) % 512;
+}
 
 void Lexer::printCodeAsTokens()
 {
