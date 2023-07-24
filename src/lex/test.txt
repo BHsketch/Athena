@@ -2,6 +2,9 @@
 	bool var;
 
 	{
-		double var
+		double var1
 		bool var;
+
+		var = 2 + var1 - 6/3;
+	}
 }

@@ -47,6 +47,12 @@ void Parser::logError(int errCode, int lineNumber, std::string expectedTerminal,
 		case 1:
 			std::cerr<<"multiple declarations for variable '"<<varName<<"' at line "<<lineNumber<<".\n";
 			break;
+		case 2:
+			std::cerr<<"missing operator at line "<<lineNumber<<".\n";
+			break;
+		case 3:
+			std::cerr<<"missing factor at line "<<lineNumber<<".\n";
+			break;
 	}
 }
 
@@ -87,7 +93,8 @@ void Parser::printConclusion()
 
 std::shared_ptr<TreeNode> Parser::block() 
 {
-	//std::cout<<"in block\n";
+	//logError(2, lexer->numberOfLines, "", "", "");
+	std::cout<<"in block\n";
 
 	std::shared_ptr<TreeNode> stmtsChild;
 	std::shared_ptr<Env> prevScope;
@@ -122,7 +129,7 @@ std::shared_ptr<TreeNode> Parser::block()
 
 std::shared_ptr<TreeNode> Parser::decl()
 {
-	//std::cout<<"in decl\n";
+	std::cout<<"in decl\n";
 
 	std::string varName;
 	std::shared_ptr<Symbol> symbol; 
@@ -143,6 +150,7 @@ std::shared_ptr<TreeNode> Parser::decl()
 	if((symbolTable->symbolMap).find(curToken->getAttribute()) != (symbolTable->symbolMap).end())
 	{
 		logError(1, lexer->numberOfLines, "", "", curToken->getAttribute());
+											//Error for multiple declarations of the same name in a single scope
 	}
 
 	(symbolTable->symbolMap)[curToken->getAttribute()] = symbol;
@@ -151,7 +159,6 @@ std::shared_ptr<TreeNode> Parser::decl()
 	matchLookahead(";");
 
 
-	//MAKE AND RETURN AN ID CHILD
 	std::shared_ptr<IdNode> idChild = std::make_shared<IdNode>(curToken->getAttribute());
 	std::shared_ptr<DeclNode> declNode = std::make_shared<DeclNode>(idChild);
 
@@ -161,9 +168,15 @@ std::shared_ptr<TreeNode> Parser::decl()
 
 std::shared_ptr<TreeNode> Parser::factor()
 {
-	//std::cout<<"in factor\n";
+	std::cout<<"in factor\n";
 
 	std::shared_ptr<TreeNode> child;
+
+	if(curToken == nullptr)
+	{
+		child = nullptr;
+		return child;
+	}
 
 	if(curToken->tag == (lexer->tokenKindObj).id)
 	{
@@ -173,10 +186,15 @@ std::shared_ptr<TreeNode> Parser::factor()
 	{
 		child = std::make_shared<NumNode>(curToken->getNumAttribute());
 
-	}else{
+	}else if(curToken->getAttribute() == "("){
 		matchLookahead("(");
 		getToken();
 		child = expr();
+	}else{
+
+		//logError(3, lexer->numberOfLines, "", "", "");
+		//									//Error for missing factor`
+		lexer->spitToken();
 	}
 
 	return child;
@@ -185,7 +203,7 @@ std::shared_ptr<TreeNode> Parser::factor()
 
 std::shared_ptr<TreeNode> Parser::term()
 {
-	//std::cout<<"in term\n";
+	std::cout<<"in term\n";
 
 	std::shared_ptr<TreeNode> factorChild;
 	std::shared_ptr<TreeNode> termChild;
@@ -201,8 +219,17 @@ std::shared_ptr<TreeNode> Parser::term()
 		op = curToken->getAttribute();
 		getToken();
 		termChild = term();
-	}else{
+	}else if((curToken->tag == ((lexer->tokenKindObj).id)) || (curToken->tag == ((lexer->tokenKindObj).literal_num))
+														   || ((curToken->getAttribute() == "(")))
+	{
+		
+		logError(2, lexer->numberOfLines, "", "", "");
+											//Error for missing operator
 		termChild = nullptr;
+
+	}else{
+		lexer->spitToken();					//This token is a part of some other construct altogether
+		termChild = nullptr;										 
 	}
 
 	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(factorChild, termChild);
@@ -213,7 +240,7 @@ std::shared_ptr<TreeNode> Parser::term()
 
 std::shared_ptr<TreeNode> Parser::expr()
 {
-	//std::cout<<"in expr\n";
+	std::cout<<"in expr\n";
 	
 	std::shared_ptr<TreeNode> termChild;
 	std::shared_ptr<TreeNode> exprChild;
@@ -242,7 +269,7 @@ std::shared_ptr<TreeNode> Parser::expr()
 
 std::shared_ptr<TreeNode> Parser::assign()
 {
-	//std::cout<<"in assign\n";
+	std::cout<<"in assign\n";
 
 	std::shared_ptr<IdNode> idChild = std::make_shared<IdNode>(curToken->getAttribute());	
 	std::shared_ptr<TreeNode> exprChild;
@@ -265,7 +292,7 @@ std::shared_ptr<TreeNode> Parser::assign()
 
 std::shared_ptr<TreeNode> Parser::stmts()
 {
-	//std::cout<<"in stmts\n";
+	std::cout<<"in stmts\n";
 
 	std::shared_ptr<TreeNode> child1;
 	std::shared_ptr<TreeNode> child2;

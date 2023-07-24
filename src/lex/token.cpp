@@ -23,6 +23,7 @@ return 0;
 token::NumToken::NumToken() : token::Token::Token(256), num(0) {}
 																		//256 is the mapped value for a token kind of literal_num
 token::NumToken::NumToken(int tag, double num) : token::Token::Token(tag), num(num) {}
+
 void token::NumToken::printToken() 
 {
 	std::cout<<"\n< "<< tag << ", " << num << " >\n";	
@@ -37,10 +38,12 @@ double token::NumToken::getNumAttribute()
 
 //---WORD TOKEN CLASS MEMBER FUNCTIONS---
 token::WordToken::WordToken(int tag, std::string word) : token::Token::Token(tag), word(word) {} 
+
 void token::WordToken::printToken()  
 {
 	std::cout<<"\n< "<< tag << ", " << word << " >\n";	
 }
+
 std::string token::WordToken::getAttribute()
 {
 	//std::cout<<"returning word\n";
