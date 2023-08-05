@@ -33,11 +33,12 @@ void Parser::logError(int errCode, int lineNumber, std::string expectedTerminal,
 {
 	errorCount++;
 
-	if(errorString == "")
+	if(errorString != "")
 	{
-	}else{
 		std::cerr<<errorString<<"\n";
 	}
+
+	std::cerr<<"Parsing Error: ";
 
 	switch(errCode)
 	{
@@ -111,7 +112,9 @@ std::shared_ptr<TreeNode> Parser::block()
 	getToken();
 	stmtsChild = stmts();
 	
+	getToken();
 	matchLookahead("}");
+	std::cout<<"block end\n";
 
 	symbolTable = prevScope;
 											//Once this scope ends, go back to the previous scope
@@ -157,6 +160,7 @@ std::shared_ptr<TreeNode> Parser::decl()
 	
 	getToken();
 	matchLookahead(";");
+	std::cout<<"matching ; in decl\n";
 
 
 	std::shared_ptr<IdNode> idChild = std::make_shared<IdNode>(curToken->getAttribute());
@@ -195,6 +199,8 @@ std::shared_ptr<TreeNode> Parser::factor()
 		//logError(3, lexer->numberOfLines, "", "", "");
 		//									//Error for missing factor`
 		lexer->spitToken();
+		std::cout<<"spit token in factor\n";
+		return nullptr;
 	}
 
 	return child;
@@ -229,6 +235,7 @@ std::shared_ptr<TreeNode> Parser::term()
 
 	}else{
 		lexer->spitToken();					//This token is a part of some other construct altogether
+		std::cout<<"spit token in term\n";
 		termChild = nullptr;										 
 	}
 
@@ -257,6 +264,8 @@ std::shared_ptr<TreeNode> Parser::expr()
 		getToken();
 		exprChild = expr();
 	}else{
+		lexer->spitToken();
+		std::cout<<"spit token in expr\n";
 		exprChild = nullptr;
 	}
 
@@ -282,6 +291,7 @@ std::shared_ptr<TreeNode> Parser::assign()
 
 	getToken();
 	matchLookahead(";");
+	std::cout<<"matching ; in assign\n";
 
 	std::shared_ptr<AssignNode> assignNode = std::make_shared<AssignNode>(idChild, exprChild);
 
@@ -323,14 +333,18 @@ std::shared_ptr<TreeNode> Parser::stmts()
 	{
 		child1 = this->assign();
 
+	}else if(curTokenAttr == "}")
+	{
+		lexer->spitToken();
+		nullStmt = true;
 	}else{
 		nullStmt = true;
 	}
 
 	if(nullStmt)
 	{
-		child1 = nullptr;
-		child2 = nullptr;
+		return nullptr;
+
 	}else{
 		getToken();
 		child2 = stmts();
@@ -341,7 +355,7 @@ std::shared_ptr<TreeNode> Parser::stmts()
 	return seqNode;
 
 }
-
+/*
 int main()
 {
 	std::shared_ptr<Lexer> lexer = std::make_shared<Lexer>("test.txt");
@@ -350,4 +364,4 @@ int main()
 	parser.getToken();
 	parser.program = parser.block();
 	parser.printConclusion();
-}
+}*/

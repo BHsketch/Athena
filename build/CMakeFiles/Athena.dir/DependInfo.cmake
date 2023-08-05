@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bhavya/cosmos/cse/projects/Athena/src/lex/lexer.cpp" "CMakeFiles/Athena.dir/src/lex/lexer.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/lex/lexer.cpp.o.d"
   "/home/bhavya/cosmos/cse/projects/Athena/src/lex/token.cpp" "CMakeFiles/Athena.dir/src/lex/token.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/lex/token.cpp.o.d"
   "/home/bhavya/cosmos/cse/projects/Athena/src/lex/tokenKinds.cpp" "CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o.d"
+  "/home/bhavya/cosmos/cse/projects/Athena/src/main/main.cpp" "CMakeFiles/Athena.dir/src/main/main.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/main/main.cpp.o.d"
   "/home/bhavya/cosmos/cse/projects/Athena/src/parse/env.cpp" "CMakeFiles/Athena.dir/src/parse/env.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/parse/env.cpp.o.d"
   "/home/bhavya/cosmos/cse/projects/Athena/src/parse/parser.cpp" "CMakeFiles/Athena.dir/src/parse/parser.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/parse/parser.cpp.o.d"
   "/home/bhavya/cosmos/cse/projects/Athena/src/parse/symbol.cpp" "CMakeFiles/Athena.dir/src/parse/symbol.cpp.o" "gcc" "CMakeFiles/Athena.dir/src/parse/symbol.cpp.o.d"

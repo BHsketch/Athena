@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Athena.dir/src/lex/token.cpp.o.d"
   "CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o"
   "CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.o.d"
+  "CMakeFiles/Athena.dir/src/main/main.cpp.o"
+  "CMakeFiles/Athena.dir/src/main/main.cpp.o.d"
   "CMakeFiles/Athena.dir/src/parse/env.cpp.o"
   "CMakeFiles/Athena.dir/src/parse/env.cpp.o.d"
   "CMakeFiles/Athena.dir/src/parse/parser.cpp.o"

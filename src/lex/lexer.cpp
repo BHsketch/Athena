@@ -107,7 +107,7 @@ void Lexer::reserveNumToken(int tag, std::string lexeme, double num)
 
 std::shared_ptr<token::Token> Lexer::getToken()
 {
-	tokenLength = 0;
+	tokenLength = 1;
 
 	while(std::isspace(static_cast<unsigned char>(curChar)))
 	{
@@ -188,12 +188,25 @@ std::shared_ptr<token::Token> Lexer::getToken()
 
 void Lexer::spitToken()
 {
+	std::cout<<"in spitToken\n";
+
 	if(bufferIndex < tokenLength)
 	{
 		curBuffer = !curBuffer;
 	}
 
 	bufferIndex = (bufferIndex - tokenLength + 512) % 512;
+
+	//DEBUGGING
+	std::cout<<"spit "<<lexemeBuffer<<"\n";
+
+	lexemeBuffer.clear();
+	readChar();
+											//readChar() is called because the next time getToken() is fired,
+											//it will expect that the first character of that token is 
+											//already read.
+
+	
 }
 
 void Lexer::printCodeAsTokens()

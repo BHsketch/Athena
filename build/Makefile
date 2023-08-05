@@ -201,6 +201,30 @@ src/lex/tokenKinds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/lex/tokenKinds.cpp.s
 .PHONY : src/lex/tokenKinds.cpp.s
 
+src/main/main.o: src/main/main.cpp.o
+.PHONY : src/main/main.o
+
+# target to build an object file
+src/main/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/main/main.cpp.o
+.PHONY : src/main/main.cpp.o
+
+src/main/main.i: src/main/main.cpp.i
+.PHONY : src/main/main.i
+
+# target to preprocess a source file
+src/main/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/main/main.cpp.i
+.PHONY : src/main/main.cpp.i
+
+src/main/main.s: src/main/main.cpp.s
+.PHONY : src/main/main.s
+
+# target to generate assembly for a file
+src/main/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Athena.dir/build.make CMakeFiles/Athena.dir/src/main/main.cpp.s
+.PHONY : src/main/main.cpp.s
+
 src/parse/env.o: src/parse/env.cpp.o
 .PHONY : src/parse/env.o
 
@@ -531,6 +555,9 @@ help:
 	@echo "... src/lex/tokenKinds.o"
 	@echo "... src/lex/tokenKinds.i"
 	@echo "... src/lex/tokenKinds.s"
+	@echo "... src/main/main.o"
+	@echo "... src/main/main.i"
+	@echo "... src/main/main.s"
 	@echo "... src/parse/env.o"
 	@echo "... src/parse/env.i"
 	@echo "... src/parse/env.s"
