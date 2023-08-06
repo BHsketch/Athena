@@ -1,9 +1,10 @@
 #pragma once
 #include "../lex/tokenKinds.h"
+#include <string>
 
 class Symbol {
 	public:
-	int varType;
+	std::string varType;
 
-	Symbol(int varType);
+	Symbol(std::string varType);
 };

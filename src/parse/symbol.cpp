@@ -1,3 +1,5 @@
 #include "../../include/parse/symbol.h"
 
-Symbol::Symbol(int varType) : varType(varType) {}
+Symbol::Symbol(std::string varType) : varType(varType) {}
+
+

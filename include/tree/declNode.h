@@ -7,5 +7,7 @@ class DeclNode : public StmtNode{
         std::shared_ptr<TreeNode> idChild = nullptr;
 
         DeclNode(std::shared_ptr<TreeNode> id);
+		
+		void gen() override;
 };
 

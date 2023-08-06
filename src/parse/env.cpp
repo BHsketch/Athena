@@ -1,9 +1,37 @@
-#include "../../include/parse/env.h"
 #include <memory>
 #include <unordered_map>
+#include "../../include/parse/symbol.h"
+#include "../../include/lex/lexer.h"
+#include "../../include/parse/env.h"
 
+Env::Env(std::shared_ptr<Lexer> lexer, Parser *parser) : prev(nullptr), lexer(lexer), parser(parser) {}
+Env::Env(std::shared_ptr<Lexer> lexer, Parser *parser, std::shared_ptr<Env> prev) : lexer(lexer), parser(parser), prev(prev) {};
 
-Env::Env() : prev(nullptr) {}
-Env::Env(std::shared_ptr<Env> prev) : prev(prev) {};
+void Env::put(std::string id, std::string varType)
+{
+        std::shared_ptr<Symbol> symbol = std::make_shared<Symbol>(varType);
+        if(symbolMap.find(id) != symbolMap.end())
+        {
+                parser->logError(1, lexer->numberOfLines, "", "", (parser->curToken)->getAttribute());
+                //Error for multiple declarations of the same name in a single scope
+        }
+
+        symbolMap[id] = symbol;
+}
+
+std::shared_ptr<Symbol> Env::find(std::string id)
+{
+        Env *curEnv = this;
+
+        while(curEnv!=nullptr)
+        {
+                if((curEnv->symbolMap).find(id) != (curEnv->symbolMap).end())
+                {
+                        return (curEnv->symbolMap)[id];
+                }
+        }
+
+        return nullptr;
+}
 
 

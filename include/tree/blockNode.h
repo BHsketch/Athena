@@ -5,6 +5,9 @@
 class BlockNode : public StmtNode{
 	public:
 	std::shared_ptr<TreeNode> stmtChild = nullptr;
+	int scope;
 
-	BlockNode(std::shared_ptr<TreeNode> stmt);
+	BlockNode(std::shared_ptr<TreeNode> stmt, int scope);
+
+	void gen() override;
 };

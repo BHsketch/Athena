@@ -1,9 +1,16 @@
 //base class for a general tree nodes
 #pragma once
 #include <memory>                                               //unique pointers
+#include <string>
 
 class TreeNode{
         public:
         virtual ~TreeNode() = default;                          //don't know the purpose from now; borrowing it from kaleidoscope
+		virtual void gen();
+		
+		//VIRTUAL FUNCTIONS FOR ID
+		virtual bool doesItExist(std::string id);
+
+		virtual std::string getIdLexeme();
 };
 

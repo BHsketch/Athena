@@ -129,7 +129,7 @@ std::shared_ptr<TreeNode> Parser::block()
 											//functions has already been read
 										
 	prevScope = symbolTable;
-	symbolTable = std::make_shared<Env>(lexer, this, symbolTable);
+	symbolTable = std::make_shared<Env>(symbolTable);
 											//Create an environment for the new scope
 	
 	getToken();
@@ -161,27 +161,21 @@ std::shared_ptr<TreeNode> Parser::decl()
 	std::cout<<"in decl\n";
 
 	std::string varName;
-	std::string varType = curToken->getAttribute();
-	std::string varName;	
-	/*
+	std::shared_ptr<Symbol> symbol; 
+	
+	std::string curTokenAttr = curToken->getAttribute();
+	
 	if(curTokenAttr == "double")
 	{
-		symbol = std::make_shared<Symbol>("double");
+		symbol = std::make_shared<Symbol>(258);
 
 	}else if(curTokenAttr == "bool")
 	{
-		symbol = std::make_shared<Symbol>("bool");
+		symbol = std::make_shared<Symbol>(257);
 	}
-	*/
-	
-	//INSERT INVALID TYPE ERROR IF VARTYPE IS NOT BOOL OR DOUBLE
 
 	getToken();
-	varName = curToken->getAttribute();
 	
-	symbolTable->put(varName, varType);
-	
-	/*
 	if((symbolTable->symbolMap).find(curToken->getAttribute()) != (symbolTable->symbolMap).end())
 	{
 		logError(1, lexer->numberOfLines, "", "", curToken->getAttribute());
@@ -189,8 +183,7 @@ std::shared_ptr<TreeNode> Parser::decl()
 	}
 
 	(symbolTable->symbolMap)[curToken->getAttribute()] = symbol;
-	*/
-
+	
 	getToken();
 	matchLookahead(";");
 	std::cout<<"matching ; in decl\n";

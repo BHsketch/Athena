@@ -172,4 +172,8 @@ CMakeFiles/Athena.dir/src/main/main.cpp.o: \
  /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/parser.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/../tree/treeNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/symbol.h \
+ /usr/include/c++/12/fstream /usr/include/c++/12/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+ /usr/include/c++/12/bits/fstream.tcc \
  /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/env.h

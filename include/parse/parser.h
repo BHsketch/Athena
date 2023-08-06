@@ -6,25 +6,30 @@
 #include <memory>														//for unique pointers
 #include <string>
 #include "symbol.h"
-#include "env.h"
+#include <fstream>
 
 class Parser{
 	public:
-	
-	//useful variables common to all parse functions 
+		
+	#include "env.h"
+
+	//USEFUL VARIABLES  
 	std::shared_ptr<token::Token> curToken = nullptr;											
 																		//function getToken stores the read value into current token
 	std::shared_ptr<TreeNode> program;	
 																		//a program node that forms the root of the abstract syntax tree
 	std::shared_ptr<Lexer> lexer = nullptr;
-	//end of useful variables
+
+	int scopeCount = 0;
+	int curScope = 0;
+	//END OF USEFUL VARIABLES
 	
 	bool errorIndicator = false;
 	int errorCount = 0;
 		
 	std::shared_ptr<Env> symbolTable = nullptr;
 
-	//helper functions 
+	//HELPER FUNCTIONS 
 	
 	void getToken();													//calls get token from the parser and assigns the result to currentToken
 																		//this is so that we don't have to do the assignment ourselves everytime we
@@ -36,7 +41,9 @@ class Parser{
 	
 	bool matchLookahead(std::string terminal);							//matches the input terminal string with the lexeme in currentToken
 
-	//end of helper functions
+	void emit(const std::string &emitString) const;
+
+	//END  OF HELPER FUNCTIONS
 
 	Parser(std::shared_ptr<Lexer> lexer);
 
