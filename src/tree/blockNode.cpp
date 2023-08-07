@@ -6,11 +6,6 @@ BlockNode::BlockNode(std::shared_ptr<TreeNode> stmt, int scope) : stmtChild(stmt
 
 }		//constructor to assign the child node to blockNode
 
-void BlockNode::gen()
-{
-	stmtChild->gen();
-}
-
 //perhaps the following functions for different phases:
 //symbol table management
 //code generation

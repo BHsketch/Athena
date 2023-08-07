@@ -8,6 +8,5 @@ class DeclNode : public StmtNode{
 
         DeclNode(std::shared_ptr<TreeNode> id);
 		
-		void gen() override;
 };
 

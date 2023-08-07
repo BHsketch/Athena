@@ -2,10 +2,13 @@
 #include <unordered_map>
 #include "../../include/parse/symbol.h"
 #include "../../include/lex/lexer.h"
-#include "../../include/parse/env.h"
+//#include "../../include/parse/env.h"
+//#include "../../include/parse/parser.h"
+#include "../../include/main/main.h"
 
 Env::Env(std::shared_ptr<Lexer> lexer, Parser *parser) : prev(nullptr), lexer(lexer), parser(parser) {}
-Env::Env(std::shared_ptr<Lexer> lexer, Parser *parser, std::shared_ptr<Env> prev) : lexer(lexer), parser(parser), prev(prev) {};
+Env::Env(std::shared_ptr<Env> prev, std::shared_ptr<Lexer> lexer, Parser *parser) :  prev(prev), lexer(lexer), parser(parser){};
+
 
 void Env::put(std::string id, std::string varType)
 {

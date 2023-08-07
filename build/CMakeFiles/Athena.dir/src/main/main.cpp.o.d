@@ -161,19 +161,20 @@ CMakeFiles/Athena.dir/src/main/main.cpp.o: \
  /usr/include/c++/12/bits/atomic_base.h \
  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
  /usr/include/c++/12/backward/auto_ptr.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/lex/lexer.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/lex/./token.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/lex/./tokenKinds.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/main.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/env.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/symbol.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/../lex/tokenKinds.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/../lex/lexer.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/../lex/./token.h \
  /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
  /usr/include/c++/12/bits/hashtable_policy.h \
  /usr/include/c++/12/bits/enable_special_members.h \
  /usr/include/c++/12/bits/unordered_map.h \
  /usr/include/c++/12/bits/erase_if.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/parser.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/../tree/treeNode.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/symbol.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/parser.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/main/../parse/../tree/treeNode.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
- /usr/include/c++/12/bits/fstream.tcc \
- /home/bhavya/cosmos/cse/projects/Athena/src/main/../../include/parse/env.h
+ /usr/include/c++/12/bits/fstream.tcc

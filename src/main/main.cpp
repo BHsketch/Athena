@@ -1,7 +1,7 @@
 #include<iostream>
 #include<memory>
+#include "../../include/main/main.h"
 #include"../../include/lex/lexer.h"
-#include"../../include/parse/parser.h"
 
 int main(int argc, char* argv[])
 {

@@ -1,8 +1,6 @@
 #include "../../include/lex/lexer.h"
-#include "../../include/parse/parser.h"
 #include "../../include/lex/token.h"
 #include "../../include/lex/tokenKinds.h"
-#include "../../include/parse/env.h"
 #include "../../include/tree/treeNode.h"
 #include "../../include/tree/blockNode.h"
 #include "../../include/tree/seqNode.h"
@@ -17,6 +15,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include "../../include/main/main.h"
+#include "../../include/parse/env.h"
 
 Parser::Parser(std::shared_ptr<Lexer> lexer) : lexer(lexer) {};
 
@@ -129,7 +129,7 @@ std::shared_ptr<TreeNode> Parser::block()
 											//functions has already been read
 										
 	prevScope = symbolTable;
-	symbolTable = std::make_shared<Env>(lexer, this, symbolTable);
+	symbolTable = std::make_shared<Env>(symbolTable, lexer, this);
 											//Create an environment for the new scope
 	
 	getToken();
@@ -160,7 +160,6 @@ std::shared_ptr<TreeNode> Parser::decl()
 {
 	std::cout<<"in decl\n";
 
-	std::string varName;
 	std::string varType = curToken->getAttribute();
 	std::string varName;	
 	/*

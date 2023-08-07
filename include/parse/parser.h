@@ -10,8 +10,6 @@
 
 class Parser{
 	public:
-		
-	#include "env.h"
 
 	//USEFUL VARIABLES  
 	std::shared_ptr<token::Token> curToken = nullptr;											
@@ -50,6 +48,7 @@ class Parser{
 	//parse functions for non terminals
 	
 	std::shared_ptr<TreeNode> block();
+	
 
 	std::shared_ptr<TreeNode> stmts();
 
@@ -68,3 +67,5 @@ class Parser{
 };
 
 
+//#include "env.h"
+//std::shared_ptr<Env> symbolTable = nullptr;

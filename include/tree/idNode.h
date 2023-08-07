@@ -10,8 +10,6 @@ class IdNode : public ExprNode{
 
 	IdNode(std::string id);
 
-	bool doesItExist(std::string id) override;
-
 	std::string getIdLexeme() override;
 
 

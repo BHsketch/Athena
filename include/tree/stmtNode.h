@@ -6,5 +6,4 @@
 class StmtNode: public TreeNode{
 	public:
 	
-	void gen() override;
 };

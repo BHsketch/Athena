@@ -9,7 +9,6 @@ class SeqNode : public StmtNode{
 
         SeqNode(std::shared_ptr<TreeNode> stmt, std::shared_ptr<TreeNode> seq);
 		
-		void gen() override;
 };
 
 

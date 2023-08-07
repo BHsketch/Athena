@@ -3,7 +3,4 @@
 
 DeclNode::DeclNode(std::shared_ptr<TreeNode> id) : idChild(id) {};
 
-void DeclNode::gen()
-{
-}	
-	
+

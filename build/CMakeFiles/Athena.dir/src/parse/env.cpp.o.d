@@ -152,9 +152,10 @@ CMakeFiles/Athena.dir/src/parse/env.cpp.o: \
  /usr/include/c++/12/bits/basic_string.tcc \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/lex/lexer.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/lex/./token.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/parse/env.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/parse/parser.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/parse/../tree/treeNode.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/main.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/env.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/parser.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/../tree/treeNode.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/istream \
  /usr/include/c++/12/ios /usr/include/c++/12/bits/ios_base.h \
  /usr/include/c++/12/bits/locale_classes.h \

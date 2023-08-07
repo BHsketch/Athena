@@ -9,5 +9,4 @@ class BlockNode : public StmtNode{
 
 	BlockNode(std::shared_ptr<TreeNode> stmt, int scope);
 
-	void gen() override;
 };
