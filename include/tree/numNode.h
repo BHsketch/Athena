@@ -6,4 +6,7 @@ class NumNode : public ExprNode{
 	int num;
 
 	NumNode(int num);
+	NumNode(int exprType, int num);
+
+	int getNumValue() override;
 };

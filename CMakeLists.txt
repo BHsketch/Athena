@@ -13,8 +13,8 @@ set (include_dir_parse "${PROJECT_SOURCE_DIR}/include/parse")
 set (include_dir_tree "${PROJECT_SOURCE_DIR}/include/tree")
 set (include_dir_main "${PROJECT_SOURCE_DIR}/include/main")
 
-file (GLOB source_files "${source_dir_main}/*.cpp" "${source_dir_lex}/*.cpp" "${source_dir_parse}/*.cpp" "${source_dir_tree}/*.cpp" )
-file (GLOB header_files "${include_dir_main}/*.h" "${include_dir_lex}/*.h" "${include_dir_parse}/*.h" "${include_dir_tree}/*.h" )
+file (GLOB source_files  "${source_dir_lex}/*.cpp" "${source_dir_parse}/*.cpp" "${source_dir_tree}/*.cpp" "${source_dir_main}/*.cpp")
+file (GLOB header_files "${include_dir_lex}/*.h" "${include_dir_parse}/*.h" "${include_dir_tree}/*.h" "${include_dir_main}/*.h" )
 
 add_executable (${PROJECT_NAME} ${source_files} ${header_files})
 

@@ -9,6 +9,7 @@ class IdNode : public ExprNode{
 	std::string id = "";
 
 	IdNode(std::string id);
+	IdNode(int exprType, std::string id);
 
 	std::string getIdLexeme() override;
 

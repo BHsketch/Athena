@@ -5,5 +5,12 @@
 
 class ExprNode: public TreeNode{
         public:
+
+		int exprType = 0;
+
+		ExprNode();
+		ExprNode(int exprType);
+
+		int getExprType() override;
 };
 

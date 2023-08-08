@@ -3,7 +3,13 @@
 #include <string>
 #include "../../include/parse/symbol.h"
 
-IdNode::IdNode(std::string id) : id(id) 
+IdNode::IdNode(std::string id) : ExprNode(tokenKindObjTree.id), id(id)
+{
+
+}
+
+
+IdNode::IdNode(int exprType, std::string id) : ExprNode(exprType), id(id) 
 {
 }
 

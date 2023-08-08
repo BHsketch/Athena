@@ -146,5 +146,5 @@ CMakeFiles/Athena.dir/src/tree/idNode.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
- /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../parse/symbol.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../parse/../lex/tokenKinds.h
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/./../lex/tokenKinds.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../parse/symbol.h

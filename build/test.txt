@@ -7,4 +7,11 @@
 
 		var = 2 + var1- 6/3;
 	}
+
+	{
+
+		double var;
+		var = 2;
+
+	}
 }
