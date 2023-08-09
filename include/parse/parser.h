@@ -39,7 +39,7 @@ class Parser{
 	
 	bool matchLookahead(std::string terminal);							//matches the input terminal string with the lexeme in currentToken
 
-	void emit(const std::string &emitString) const;
+	//void emit(const std::string &emitString) const;
 
 	//END  OF HELPER FUNCTIONS
 

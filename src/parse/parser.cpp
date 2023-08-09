@@ -95,17 +95,18 @@ void Parser::printConclusion()
 	std::cout<<"Program parsed with "<<errorCount<<" errors.\n";
 }
 
+/*
 void Parser::emit(const std::string &emitString) const
-        {
-                static std::ofstream emitFile("emitInter.txt");
+{
+	static std::ofstream emitFile("emitInter.txt");
 
-                if(emitFile.is_open())
-                {
-                        emitFile << emitString;
-                        emitFile << "\n";
-                }
-        }
-
+	if(emitFile.is_open())
+	{
+		emitFile << emitString;
+		emitFile << "\n";
+	}
+}
+*/
 
 std::shared_ptr<TreeNode> Parser::block() 
 {
@@ -150,7 +151,7 @@ std::shared_ptr<TreeNode> Parser::block()
 
 	std::shared_ptr<BlockNode> blockNode = std::make_shared<BlockNode>(stmtsChild, scope);
 
-	emit("test emit");
+	//emit("test emit");
 
 	return blockNode;
 

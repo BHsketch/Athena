@@ -21,5 +21,6 @@ class TreeNode{
 																			//print( lvalue(expr) )
 
 		virtual int getExprType();
+		virtual void emit(const std::string &emitString) const;
 };
 
