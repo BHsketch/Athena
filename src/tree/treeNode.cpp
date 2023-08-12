@@ -8,15 +8,8 @@ int TreeNode::temporaryVar = 0;
 
 std::ofstream TreeNode::emitFile;
 
-std::stack<int> TreeNode::scope;
-
 TreeNode::TreeNode()
 {
-}
-
-TreeNode::TreeNode(int curScope)
-{
-	scope.push(curScope);
 }
 
 std::string TreeNode::getIdLexeme()

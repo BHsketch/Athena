@@ -149,7 +149,7 @@ std::shared_ptr<TreeNode> Parser::block()
 	}
 	*/
 
-	std::shared_ptr<BlockNode> blockNode = std::make_shared<BlockNode>(stmtsChild, scope);
+	std::shared_ptr<BlockNode> blockNode = std::make_shared<BlockNode>(stmtsChild);
 
 	//emit("test emit");
 

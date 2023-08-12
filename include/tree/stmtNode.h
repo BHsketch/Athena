@@ -9,5 +9,5 @@ class StmtNode: public TreeNode{
 	
 	StmtNode();
 
-	StmtNode(int scope);
+	//StmtNode(int scope);
 };

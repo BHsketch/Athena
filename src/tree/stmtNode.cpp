@@ -7,4 +7,4 @@ void StmtNode::gen()
 }
 
 StmtNode::StmtNode(){};
-StmtNode::StmtNode(int scope) : TreeNode(scope) {};
+//StmtNode::StmtNode(int scope) : TreeNode(scope) {};

@@ -11,14 +11,15 @@ class TreeNode{
 		
 		static std::ofstream emitFile;
 		static token::TokenKind tokenKindObjTree;
-		static int temporaryVar;
-		static std::stack<int> scope;
 																//so that inner nodes can be queried for their type by storing a variable with this number
+		static int temporaryVar;
+		//static std::stack<int> scope;
+																//this is a static variable that will be updated only when a new block is created. 
 
 
         virtual ~TreeNode() = default;                          //don't know the purpose from now; borrowing it from kaleidoscope
 		TreeNode();
-		TreeNode(int scope);
+		//TreeNode(int scope);
 		
 		virtual std::string getIdLexeme();
 		virtual int getNumValue();
