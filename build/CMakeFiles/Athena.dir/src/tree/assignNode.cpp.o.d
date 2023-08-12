@@ -167,4 +167,7 @@ CMakeFiles/Athena.dir/src/tree/assignNode.cpp.o: \
  /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
- /usr/include/c++/12/bits/fstream.tcc /usr/include/c++/12/iostream
+ /usr/include/c++/12/bits/fstream.tcc /usr/include/c++/12/stack \
+ /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
+ /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/bits/stl_stack.h \
+ /usr/include/c++/12/iostream

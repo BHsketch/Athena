@@ -4,6 +4,7 @@
 #include <string>
 #include "../lex/tokenKinds.h"
 #include <fstream>
+#include <stack>
 
 class TreeNode{
         public:
@@ -11,11 +12,13 @@ class TreeNode{
 		static std::ofstream emitFile;
 		static token::TokenKind tokenKindObjTree;
 		static int temporaryVar;
+		static std::stack<int> scope;
 																//so that inner nodes can be queried for their type by storing a variable with this number
 
 
         virtual ~TreeNode() = default;                          //don't know the purpose from now; borrowing it from kaleidoscope
 		TreeNode();
+		TreeNode(int scope);
 		
 		virtual std::string getIdLexeme();
 		virtual int getNumValue();

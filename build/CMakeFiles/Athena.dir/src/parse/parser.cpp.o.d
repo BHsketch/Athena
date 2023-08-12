@@ -177,7 +177,9 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: \
  /usr/include/c++/12/bits/istream.tcc /usr/include/c++/12/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
- /usr/include/c++/12/bits/fstream.tcc \
+ /usr/include/c++/12/bits/fstream.tcc /usr/include/c++/12/stack \
+ /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_deque.h \
+ /usr/include/c++/12/bits/deque.tcc /usr/include/c++/12/bits/stl_stack.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/blockNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/./stmtNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/seqNode.h \

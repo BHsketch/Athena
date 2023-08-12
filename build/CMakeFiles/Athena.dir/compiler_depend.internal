@@ -622,6 +622,11 @@ CMakeFiles/Athena.dir/src/main/main.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/parse/env.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/env.cpp
@@ -840,6 +845,11 @@ CMakeFiles/Athena.dir/src/parse/env.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/parse/parser.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/parser.cpp
@@ -1054,6 +1064,11 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
  /home/bhavya/cosmos/cse/projects/Athena/include/tree/blockNode.h
  /home/bhavya/cosmos/cse/projects/Athena/include/tree/stmtNode.h
  /home/bhavya/cosmos/cse/projects/Athena/include/tree/seqNode.h
@@ -1413,6 +1428,11 @@ CMakeFiles/Athena.dir/src/tree/assignNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
  /usr/include/c++/12/iostream
 
 CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o
@@ -1622,6 +1642,11 @@ CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/declNode.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/tree/declNode.cpp
@@ -1830,6 +1855,11 @@ CMakeFiles/Athena.dir/src/tree/declNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h
 
 CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o
@@ -2038,6 +2068,11 @@ CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
  /usr/include/c++/12/iostream
 
 CMakeFiles/Athena.dir/src/tree/idNode.cpp.o
@@ -2247,6 +2282,11 @@ CMakeFiles/Athena.dir/src/tree/idNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h
 
 CMakeFiles/Athena.dir/src/tree/numNode.cpp.o
@@ -2456,6 +2496,11 @@ CMakeFiles/Athena.dir/src/tree/numNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/tree/opexprNode.cpp
@@ -2664,6 +2709,11 @@ CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/tree/seqNode.cpp
@@ -2872,6 +2922,11 @@ CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/tree/stmtNode.cpp
@@ -3079,6 +3134,11 @@ CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o
  /home/bhavya/cosmos/cse/projects/Athena/src/tree/treeNode.cpp
@@ -3285,5 +3345,10 @@ CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o
  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h
  /usr/include/c++/12/bits/fstream.tcc
+ /usr/include/c++/12/stack
+ /usr/include/c++/12/deque
+ /usr/include/c++/12/bits/stl_deque.h
+ /usr/include/c++/12/bits/deque.tcc
+ /usr/include/c++/12/bits/stl_stack.h
  /usr/include/c++/12/iostream
 

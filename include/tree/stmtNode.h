@@ -7,4 +7,7 @@ class StmtNode: public TreeNode{
 	public:
 	void gen() override;
 	
+	StmtNode();
+
+	StmtNode(int scope);
 };

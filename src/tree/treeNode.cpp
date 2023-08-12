@@ -8,18 +8,15 @@ int TreeNode::temporaryVar = 0;
 
 std::ofstream TreeNode::emitFile;
 
+std::stack<int> TreeNode::scope;
+
 TreeNode::TreeNode()
 {
-	/*emitFile.open("emitInter.txt", std::ofstream::app);
+}
 
-	if(!emitFile.is_open())
-	{
-		std::cerr<<"Failed to open file: emitInter.txt\n";
-	}
-
-	std::string s = "text to emit";
-	emitFile << s;
-	*/
+TreeNode::TreeNode(int curScope)
+{
+	scope.push(curScope);
 }
 
 std::string TreeNode::getIdLexeme()
