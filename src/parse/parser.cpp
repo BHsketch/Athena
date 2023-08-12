@@ -272,7 +272,7 @@ std::shared_ptr<TreeNode> Parser::term()
 		termChild = nullptr;										 
 	}
 
-	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(factorChild, termChild);
+	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(factorChild, termChild, op);
 
 	return opexprNode;
 }
@@ -302,7 +302,7 @@ std::shared_ptr<TreeNode> Parser::expr()
 		exprChild = nullptr;
 	}
 
-	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(termChild, exprChild);
+	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(termChild, exprChild, op);
 
 	return opexprNode;
 }

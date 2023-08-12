@@ -12,6 +12,7 @@ int main(int argc, char* argv[])
 	
 	parser->getToken();
 	parser->program = parser->stmts();
+	(parser->program)->gen();
 	parser->printConclusion();
 }
 

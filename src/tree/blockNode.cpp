@@ -10,3 +10,12 @@ BlockNode::BlockNode(std::shared_ptr<TreeNode> stmt, int scope) : stmtChild(stmt
 //symbol table management
 //code generation
 
+
+void  BlockNode::gen()
+{
+	if(stmtChild != nullptr)
+	{
+		stmtChild->gen();
+	}
+}
+

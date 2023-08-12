@@ -8,6 +8,8 @@ class AssignNode : public StmtNode{
 		std::shared_ptr<TreeNode> exprChild = nullptr;
 
         AssignNode(std::shared_ptr<TreeNode> id, std::shared_ptr<TreeNode> expr);
-		
+		void gen() override;
+		std::shared_ptr<TreeNode> getAssignIdChild() override;
+		std::shared_ptr<TreeNode> getAssignExprChild() override;
 };
 

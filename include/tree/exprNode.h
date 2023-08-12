@@ -2,11 +2,12 @@
 #pragma once
 #include <memory>                                                               //unique pointers
 #include "treeNode.h"
+#include <string>
 
 class ExprNode: public TreeNode{
         public:
 
-		int exprType = 0;
+		int exprType;
 
 		ExprNode();
 		ExprNode(int exprType);

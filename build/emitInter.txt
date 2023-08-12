@@ -1,3 +1,6 @@
-test emit
-test emit
-test emit
+t1=6/3
+t1=6/3
+t2=var-t1
+t3=2+t2
+var=t3
+var=2

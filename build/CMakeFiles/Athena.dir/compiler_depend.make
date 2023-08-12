@@ -1020,18 +1020,8 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/blockNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/stmtNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/seqNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/declNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/idNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/exprNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/opexprNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/numNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/assignNode.h \
-  /usr/include/c++/12/iostream \
-  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
   /usr/include/c++/12/bits/ios_base.h \
   /usr/include/c++/12/bits/locale_classes.h \
@@ -1051,14 +1041,24 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
   /usr/include/c++/12/bits/locale_facets.tcc \
   /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
   /usr/include/c++/12/bits/ostream.tcc \
-  /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
-  /usr/include/c++/12/fstream \
   /usr/include/c++/12/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
   /usr/include/c++/12/bits/fstream.tcc \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/blockNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/stmtNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/seqNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/declNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/idNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/exprNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/opexprNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/numNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/assignNode.h \
+  /usr/include/c++/12/iostream \
   /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h
@@ -1376,7 +1376,36 @@ CMakeFiles/Athena.dir/src/tree/assignNode.cpp.o: /home/bhavya/cosmos/cse/project
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/iostream
 
 CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/blockNode.cpp \
   /usr/include/stdc-predef.h \
@@ -1555,7 +1584,35 @@ CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o: /home/bhavya/cosmos/cse/projects
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
 CMakeFiles/Athena.dir/src/tree/declNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/declNode.cpp \
   /usr/include/stdc-predef.h \
@@ -1735,6 +1792,34 @@ CMakeFiles/Athena.dir/src/tree/declNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
   /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h
 
 CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/exprNode.cpp \
@@ -1913,7 +1998,36 @@ CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/iostream
 
 CMakeFiles/Athena.dir/src/tree/idNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/idNode.cpp \
   /usr/include/stdc-predef.h \
@@ -2093,6 +2207,34 @@ CMakeFiles/Athena.dir/src/tree/idNode.cpp.o: /home/bhavya/cosmos/cse/projects/At
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
   /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h
 
 CMakeFiles/Athena.dir/src/tree/numNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/numNode.cpp \
@@ -2272,7 +2414,35 @@ CMakeFiles/Athena.dir/src/tree/numNode.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
 CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/opexprNode.cpp \
   /usr/include/stdc-predef.h \
@@ -2451,7 +2621,35 @@ CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o: /home/bhavya/cosmos/cse/project
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
 CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/seqNode.cpp \
   /usr/include/stdc-predef.h \
@@ -2630,7 +2828,35 @@ CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
 CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/stmtNode.cpp \
   /usr/include/stdc-predef.h \
@@ -2808,7 +3034,35 @@ CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc
 
 CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/treeNode.cpp \
   /usr/include/stdc-predef.h \
@@ -2985,7 +3239,36 @@ CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/fstream \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+  /usr/include/c++/12/bits/fstream.tcc \
+  /usr/include/c++/12/iostream
 
 
 /home/bhavya/cosmos/cse/projects/Athena/src/tree/declNode.cpp:
