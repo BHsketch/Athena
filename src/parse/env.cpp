@@ -6,8 +6,8 @@
 //#include "../../include/parse/parser.h"
 #include "../../include/main/main.h"
 
-Env::Env(std::shared_ptr<Lexer> lexer, Parser *parser) : prev(nullptr), lexer(lexer), parser(parser) {}
-Env::Env(std::shared_ptr<Env> prev, std::shared_ptr<Lexer> lexer, Parser *parser) :  prev(prev), lexer(lexer), parser(parser){};
+Env::Env(int scope, std::shared_ptr<Lexer> lexer, Parser *parser) : scope(scope), prev(nullptr), lexer(lexer), parser(parser) {}
+Env::Env(int scope, std::shared_ptr<Env> prev, std::shared_ptr<Lexer> lexer, Parser *parser) : scope(scope),  prev(prev), lexer(lexer), parser(parser){};
 
 
 void Env::put(std::string id, std::string varType)

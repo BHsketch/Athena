@@ -130,7 +130,7 @@ std::shared_ptr<TreeNode> Parser::block()
 											//functions has already been read
 										
 	prevScope = symbolTable;
-	symbolTable = std::make_shared<Env>(symbolTable, lexer, this);
+	symbolTable = std::make_shared<Env>(scope, symbolTable, lexer, this);
 											//Create an environment for the new scope
 	
 	getToken();
