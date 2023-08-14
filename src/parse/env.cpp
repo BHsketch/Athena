@@ -1,10 +1,8 @@
+#include "../../include/main/main.h"
 #include <memory>
 #include <unordered_map>
 #include "../../include/parse/symbol.h"
 #include "../../include/lex/lexer.h"
-//#include "../../include/parse/env.h"
-//#include "../../include/parse/parser.h"
-#include "../../include/main/main.h"
 
 Env::Env(int scope, std::shared_ptr<Lexer> lexer, Parser *parser) : scope(scope), prev(nullptr), lexer(lexer), parser(parser) {}
 Env::Env(int scope, std::shared_ptr<Env> prev, std::shared_ptr<Lexer> lexer, Parser *parser) : scope(scope),  prev(prev), lexer(lexer), parser(parser){};

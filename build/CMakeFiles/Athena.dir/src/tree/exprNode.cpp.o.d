@@ -112,6 +112,10 @@ CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: \
  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
  /usr/include/c++/12/backward/auto_ptr.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/treeNode.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/main.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/../parse/env.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/../parse/symbol.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/../parse/../lex/tokenKinds.h \
  /usr/include/c++/12/string /usr/include/c++/12/bits/char_traits.h \
  /usr/include/c++/12/cstdint /usr/include/c++/12/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
@@ -145,7 +149,14 @@ CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
  /usr/include/c++/12/bits/basic_string.tcc \
- /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../lex/tokenKinds.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/../parse/../lex/lexer.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/../parse/../lex/./token.h \
+ /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /usr/include/c++/12/bits/unordered_map.h \
+ /usr/include/c++/12/bits/erase_if.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/tree/../../include/tree/../main/../parse/parser.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/istream \
  /usr/include/c++/12/ios /usr/include/c++/12/bits/ios_base.h \
  /usr/include/c++/12/bits/locale_classes.h \

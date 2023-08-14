@@ -1,5 +1,6 @@
 //base class for a general tree nodes
 #pragma once
+#include "../main/main.h"
 #include <memory>                                               //unique pointers
 #include <string>
 #include "../lex/tokenKinds.h"
@@ -9,6 +10,7 @@
 class TreeNode{
         public:
 		
+		std::shared_ptr<Env> curEnv;
 		static std::ofstream emitFile;
 		static token::TokenKind tokenKindObjTree;
 																//so that inner nodes can be queried for their type by storing a variable with this number
@@ -20,6 +22,8 @@ class TreeNode{
         virtual ~TreeNode() = default;                          //don't know the purpose from now; borrowing it from kaleidoscope
 		TreeNode();
 		//TreeNode(int scope);
+
+		virtual void setEnv(std::shared_ptr<Env> curEnv);
 		
 		virtual std::string getIdLexeme();
 		virtual int getNumValue();

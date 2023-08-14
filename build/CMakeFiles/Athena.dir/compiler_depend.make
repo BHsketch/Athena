@@ -626,10 +626,11 @@ CMakeFiles/Athena.dir/src/main/main.cpp.o: /home/bhavya/cosmos/cse/projects/Athe
 
 CMakeFiles/Athena.dir/src/parse/env.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/parse/env.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/12/memory \
-  /usr/include/c++/12/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
-  /usr/include/c++/12/bits/new_allocator.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/string \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/features.h \
@@ -641,62 +642,18 @@ CMakeFiles/Athena.dir/src/parse/env.cpp.o: /home/bhavya/cosmos/cse/projects/Athe
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
-  /usr/include/c++/12/new \
-  /usr/include/c++/12/bits/exception.h \
-  /usr/include/c++/12/bits/functexcept.h \
-  /usr/include/c++/12/bits/exception_defines.h \
-  /usr/include/c++/12/bits/move.h \
-  /usr/include/c++/12/type_traits \
-  /usr/include/c++/12/bits/memoryfwd.h \
-  /usr/include/c++/12/bits/stl_construct.h \
-  /usr/include/c++/12/bits/stl_iterator_base_types.h \
-  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/12/bits/concept_check.h \
-  /usr/include/c++/12/debug/assertions.h \
-  /usr/include/c++/12/bits/stl_uninitialized.h \
-  /usr/include/c++/12/bits/stl_algobase.h \
-  /usr/include/c++/12/bits/cpp_type_traits.h \
-  /usr/include/c++/12/ext/type_traits.h \
-  /usr/include/c++/12/ext/numeric_traits.h \
-  /usr/include/c++/12/bits/stl_pair.h \
-  /usr/include/c++/12/bits/utility.h \
-  /usr/include/c++/12/bits/stl_iterator.h \
-  /usr/include/c++/12/bits/ptr_traits.h \
-  /usr/include/c++/12/debug/debug.h \
-  /usr/include/c++/12/bits/predefined_ops.h \
-  /usr/include/c++/12/ext/alloc_traits.h \
-  /usr/include/c++/12/bits/alloc_traits.h \
-  /usr/include/c++/12/bits/stl_tempbuf.h \
-  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/12/bits/align.h \
-  /usr/include/c++/12/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/12/bits/uses_allocator.h \
-  /usr/include/c++/12/bits/unique_ptr.h \
-  /usr/include/c++/12/tuple \
-  /usr/include/c++/12/bits/invoke.h \
-  /usr/include/c++/12/bits/stl_function.h \
-  /usr/include/c++/12/backward/binders.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
-  /usr/include/c++/12/bits/shared_ptr.h \
-  /usr/include/c++/12/iosfwd \
   /usr/include/c++/12/bits/stringfwd.h \
+  /usr/include/c++/12/bits/memoryfwd.h \
+  /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/bits/postypes.h \
   /usr/include/c++/12/cwchar \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -704,88 +661,84 @@ CMakeFiles/Athena.dir/src/parse/env.cpp.o: /home/bhavya/cosmos/cse/projects/Athe
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/12/bits/shared_ptr_base.h \
-  /usr/include/c++/12/typeinfo \
-  /usr/include/c++/12/bits/allocated_ptr.h \
-  /usr/include/c++/12/bits/refwrap.h \
-  /usr/include/c++/12/ext/aligned_buffer.h \
-  /usr/include/c++/12/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/12/ext/concurrence.h \
-  /usr/include/c++/12/exception \
-  /usr/include/c++/12/bits/exception_ptr.h \
-  /usr/include/c++/12/bits/cxxabi_init_exception.h \
-  /usr/include/c++/12/bits/nested_exception.h \
-  /usr/include/c++/12/bits/shared_ptr_atomic.h \
-  /usr/include/c++/12/bits/atomic_base.h \
-  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/12/backward/auto_ptr.h \
-  /usr/include/c++/12/unordered_map \
-  /usr/include/c++/12/initializer_list \
-  /usr/include/c++/12/bits/hashtable.h \
-  /usr/include/c++/12/bits/hashtable_policy.h \
-  /usr/include/c++/12/bits/enable_special_members.h \
-  /usr/include/c++/12/bits/unordered_map.h \
-  /usr/include/c++/12/bits/range_access.h \
-  /usr/include/c++/12/bits/erase_if.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
-  /usr/include/c++/12/string \
-  /usr/include/c++/12/bits/char_traits.h \
+  /usr/include/c++/12/type_traits \
   /usr/include/c++/12/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/12/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
+  /usr/include/c++/12/bits/new_allocator.h \
+  /usr/include/c++/12/new \
+  /usr/include/c++/12/bits/exception.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
   /usr/include/c++/12/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/12/iosfwd \
   /usr/include/c++/12/cctype \
   /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/c++/12/bits/ostream_insert.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/ext/type_traits.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/bits/stl_function.h \
+  /usr/include/c++/12/backward/binders.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/bits/refwrap.h \
+  /usr/include/c++/12/bits/invoke.h \
+  /usr/include/c++/12/bits/range_access.h \
+  /usr/include/c++/12/initializer_list \
   /usr/include/c++/12/bits/basic_string.h \
+  /usr/include/c++/12/ext/alloc_traits.h \
+  /usr/include/c++/12/bits/alloc_traits.h \
+  /usr/include/c++/12/bits/stl_construct.h \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
@@ -805,11 +758,58 @@ CMakeFiles/Athena.dir/src/parse/env.cpp.o: /home/bhavya/cosmos/cse/projects/Athe
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
   /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/tuple \
+  /usr/include/c++/12/bits/uses_allocator.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /usr/include/c++/12/memory \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/12/bits/align.h \
+  /usr/include/c++/12/bit \
+  /usr/include/c++/12/bits/unique_ptr.h \
+  /usr/include/c++/12/bits/shared_ptr.h \
+  /usr/include/c++/12/bits/shared_ptr_base.h \
+  /usr/include/c++/12/typeinfo \
+  /usr/include/c++/12/bits/allocated_ptr.h \
+  /usr/include/c++/12/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/12/ext/concurrence.h \
+  /usr/include/c++/12/exception \
+  /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/include/c++/12/bits/nested_exception.h \
+  /usr/include/c++/12/bits/shared_ptr_atomic.h \
+  /usr/include/c++/12/bits/atomic_base.h \
+  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
   /usr/include/c++/12/fstream \
@@ -848,8 +848,9 @@ CMakeFiles/Athena.dir/src/parse/env.cpp.o: /home/bhavya/cosmos/cse/projects/Athe
 
 CMakeFiles/Athena.dir/src/parse/parser.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/parse/parser.cpp \
   /usr/include/stdc-predef.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -982,6 +983,8 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/c++/12/bits/functional_hash.h \
   /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
   /usr/include/c++/12/unordered_map \
   /usr/include/c++/12/ext/aligned_buffer.h \
   /usr/include/c++/12/bits/hashtable.h \
@@ -1029,6 +1032,7 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/c++/12/bits/atomic_base.h \
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
@@ -1069,14 +1073,10 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/declNode.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/idNode.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/exprNode.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/opexprNode.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/numNode.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/assignNode.h \
-  /usr/include/c++/12/iostream \
-  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h
+  /usr/include/c++/12/iostream
 
 CMakeFiles/Athena.dir/src/parse/symbol.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/parse/symbol.cpp \
   /usr/include/stdc-predef.h \
@@ -1344,6 +1344,10 @@ CMakeFiles/Athena.dir/src/tree/assignNode.cpp.o: /home/bhavya/cosmos/cse/project
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -1391,7 +1395,15 @@ CMakeFiles/Athena.dir/src/tree/assignNode.cpp.o: /home/bhavya/cosmos/cse/project
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -1557,6 +1569,10 @@ CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o: /home/bhavya/cosmos/cse/projects
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -1604,7 +1620,15 @@ CMakeFiles/Athena.dir/src/tree/blockNode.cpp.o: /home/bhavya/cosmos/cse/projects
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -1769,6 +1793,10 @@ CMakeFiles/Athena.dir/src/tree/declNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -1816,7 +1844,15 @@ CMakeFiles/Athena.dir/src/tree/declNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -1849,8 +1885,7 @@ CMakeFiles/Athena.dir/src/tree/declNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/c++/12/deque \
   /usr/include/c++/12/bits/stl_deque.h \
   /usr/include/c++/12/bits/deque.tcc \
-  /usr/include/c++/12/bits/stl_stack.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h
+  /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/exprNode.cpp \
   /usr/include/stdc-predef.h \
@@ -1981,6 +2016,10 @@ CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -2028,7 +2067,15 @@ CMakeFiles/Athena.dir/src/tree/exprNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -2194,6 +2241,10 @@ CMakeFiles/Athena.dir/src/tree/idNode.cpp.o: /home/bhavya/cosmos/cse/projects/At
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -2241,7 +2292,15 @@ CMakeFiles/Athena.dir/src/tree/idNode.cpp.o: /home/bhavya/cosmos/cse/projects/At
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -2274,8 +2333,7 @@ CMakeFiles/Athena.dir/src/tree/idNode.cpp.o: /home/bhavya/cosmos/cse/projects/At
   /usr/include/c++/12/deque \
   /usr/include/c++/12/bits/stl_deque.h \
   /usr/include/c++/12/bits/deque.tcc \
-  /usr/include/c++/12/bits/stl_stack.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h
+  /usr/include/c++/12/bits/stl_stack.h
 
 CMakeFiles/Athena.dir/src/tree/numNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/numNode.cpp \
   /usr/include/stdc-predef.h \
@@ -2407,6 +2465,10 @@ CMakeFiles/Athena.dir/src/tree/numNode.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -2454,7 +2516,15 @@ CMakeFiles/Athena.dir/src/tree/numNode.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -2619,6 +2689,10 @@ CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o: /home/bhavya/cosmos/cse/project
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -2666,7 +2740,15 @@ CMakeFiles/Athena.dir/src/tree/opexprNode.cpp.o: /home/bhavya/cosmos/cse/project
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -2831,6 +2913,10 @@ CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -2878,7 +2964,15 @@ CMakeFiles/Athena.dir/src/tree/seqNode.cpp.o: /home/bhavya/cosmos/cse/projects/A
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -3042,6 +3136,10 @@ CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/c++/12/bits/atomic_lockfree_defines.h \
   /usr/include/c++/12/backward/auto_ptr.h \
   /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
   /usr/include/c++/12/string \
   /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
@@ -3089,7 +3187,15 @@ CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \
@@ -3126,11 +3232,11 @@ CMakeFiles/Athena.dir/src/tree/stmtNode.cpp.o: /home/bhavya/cosmos/cse/projects/
 
 CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o: /home/bhavya/cosmos/cse/projects/Athena/src/tree/treeNode.cpp \
   /usr/include/stdc-predef.h \
-  /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
-  /usr/include/c++/12/memory \
-  /usr/include/c++/12/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
-  /usr/include/c++/12/bits/new_allocator.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/main/main.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/env.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/symbol.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /usr/include/c++/12/string \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/features.h \
@@ -3142,62 +3248,18 @@ CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
-  /usr/include/c++/12/new \
-  /usr/include/c++/12/bits/exception.h \
-  /usr/include/c++/12/bits/functexcept.h \
-  /usr/include/c++/12/bits/exception_defines.h \
-  /usr/include/c++/12/bits/move.h \
-  /usr/include/c++/12/type_traits \
-  /usr/include/c++/12/bits/memoryfwd.h \
-  /usr/include/c++/12/bits/stl_construct.h \
-  /usr/include/c++/12/bits/stl_iterator_base_types.h \
-  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/12/bits/concept_check.h \
-  /usr/include/c++/12/debug/assertions.h \
-  /usr/include/c++/12/bits/stl_uninitialized.h \
-  /usr/include/c++/12/bits/stl_algobase.h \
-  /usr/include/c++/12/bits/cpp_type_traits.h \
-  /usr/include/c++/12/ext/type_traits.h \
-  /usr/include/c++/12/ext/numeric_traits.h \
-  /usr/include/c++/12/bits/stl_pair.h \
-  /usr/include/c++/12/bits/utility.h \
-  /usr/include/c++/12/bits/stl_iterator.h \
-  /usr/include/c++/12/bits/ptr_traits.h \
-  /usr/include/c++/12/debug/debug.h \
-  /usr/include/c++/12/bits/predefined_ops.h \
-  /usr/include/c++/12/ext/alloc_traits.h \
-  /usr/include/c++/12/bits/alloc_traits.h \
-  /usr/include/c++/12/bits/stl_tempbuf.h \
-  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/12/bits/align.h \
-  /usr/include/c++/12/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/12/bits/uses_allocator.h \
-  /usr/include/c++/12/bits/unique_ptr.h \
-  /usr/include/c++/12/tuple \
-  /usr/include/c++/12/bits/invoke.h \
-  /usr/include/c++/12/bits/stl_function.h \
-  /usr/include/c++/12/backward/binders.h \
-  /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
-  /usr/include/c++/12/bits/shared_ptr.h \
-  /usr/include/c++/12/iosfwd \
   /usr/include/c++/12/bits/stringfwd.h \
+  /usr/include/c++/12/bits/memoryfwd.h \
+  /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/bits/postypes.h \
   /usr/include/c++/12/cwchar \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -3205,80 +3267,84 @@ CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/12/bits/shared_ptr_base.h \
-  /usr/include/c++/12/typeinfo \
-  /usr/include/c++/12/bits/allocated_ptr.h \
-  /usr/include/c++/12/bits/refwrap.h \
-  /usr/include/c++/12/ext/aligned_buffer.h \
-  /usr/include/c++/12/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/12/ext/concurrence.h \
-  /usr/include/c++/12/exception \
-  /usr/include/c++/12/bits/exception_ptr.h \
-  /usr/include/c++/12/bits/cxxabi_init_exception.h \
-  /usr/include/c++/12/bits/nested_exception.h \
-  /usr/include/c++/12/bits/shared_ptr_atomic.h \
-  /usr/include/c++/12/bits/atomic_base.h \
-  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/12/backward/auto_ptr.h \
-  /usr/include/c++/12/string \
-  /usr/include/c++/12/bits/char_traits.h \
+  /usr/include/c++/12/type_traits \
   /usr/include/c++/12/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/12/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
+  /usr/include/c++/12/bits/new_allocator.h \
+  /usr/include/c++/12/new \
+  /usr/include/c++/12/bits/exception.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/bits/move.h \
+  /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
   /usr/include/c++/12/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/12/iosfwd \
   /usr/include/c++/12/cctype \
   /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/c++/12/bits/ostream_insert.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
+  /usr/include/c++/12/bits/stl_iterator_base_types.h \
+  /usr/include/c++/12/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/12/bits/concept_check.h \
+  /usr/include/c++/12/debug/assertions.h \
+  /usr/include/c++/12/bits/stl_iterator.h \
+  /usr/include/c++/12/ext/type_traits.h \
+  /usr/include/c++/12/bits/ptr_traits.h \
+  /usr/include/c++/12/bits/stl_function.h \
+  /usr/include/c++/12/backward/binders.h \
+  /usr/include/c++/12/ext/numeric_traits.h \
+  /usr/include/c++/12/bits/stl_algobase.h \
+  /usr/include/c++/12/bits/stl_pair.h \
+  /usr/include/c++/12/bits/utility.h \
+  /usr/include/c++/12/debug/debug.h \
+  /usr/include/c++/12/bits/predefined_ops.h \
+  /usr/include/c++/12/bits/refwrap.h \
+  /usr/include/c++/12/bits/invoke.h \
   /usr/include/c++/12/bits/range_access.h \
   /usr/include/c++/12/initializer_list \
   /usr/include/c++/12/bits/basic_string.h \
+  /usr/include/c++/12/ext/alloc_traits.h \
+  /usr/include/c++/12/bits/alloc_traits.h \
+  /usr/include/c++/12/bits/stl_construct.h \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
   /usr/include/stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
@@ -3298,8 +3364,60 @@ CMakeFiles/Athena.dir/src/tree/treeNode.cpp.o: /home/bhavya/cosmos/cse/projects/
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
+  /usr/include/c++/12/bits/functional_hash.h \
+  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/basic_string.tcc \
-  /home/bhavya/cosmos/cse/projects/Athena/include/lex/tokenKinds.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/lexer.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/lex/token.h \
+  /usr/include/c++/12/unordered_map \
+  /usr/include/c++/12/ext/aligned_buffer.h \
+  /usr/include/c++/12/bits/hashtable.h \
+  /usr/include/c++/12/bits/hashtable_policy.h \
+  /usr/include/c++/12/tuple \
+  /usr/include/c++/12/bits/uses_allocator.h \
+  /usr/include/c++/12/bits/enable_special_members.h \
+  /usr/include/c++/12/bits/unordered_map.h \
+  /usr/include/c++/12/bits/erase_if.h \
+  /usr/include/c++/12/memory \
+  /usr/include/c++/12/bits/stl_uninitialized.h \
+  /usr/include/c++/12/bits/stl_tempbuf.h \
+  /usr/include/c++/12/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/12/bits/align.h \
+  /usr/include/c++/12/bit \
+  /usr/include/c++/12/bits/unique_ptr.h \
+  /usr/include/c++/12/bits/shared_ptr.h \
+  /usr/include/c++/12/bits/shared_ptr_base.h \
+  /usr/include/c++/12/typeinfo \
+  /usr/include/c++/12/bits/allocated_ptr.h \
+  /usr/include/c++/12/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/12/ext/concurrence.h \
+  /usr/include/c++/12/exception \
+  /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/include/c++/12/bits/nested_exception.h \
+  /usr/include/c++/12/bits/shared_ptr_atomic.h \
+  /usr/include/c++/12/bits/atomic_base.h \
+  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/12/backward/auto_ptr.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/parse/parser.h \
+  /home/bhavya/cosmos/cse/projects/Athena/include/tree/treeNode.h \
   /usr/include/c++/12/fstream \
   /usr/include/c++/12/istream \
   /usr/include/c++/12/ios \

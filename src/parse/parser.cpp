@@ -1,3 +1,4 @@
+#include "../../include/main/main.h"
 #include "../../include/lex/lexer.h"
 #include "../../include/lex/token.h"
 #include "../../include/lex/tokenKinds.h"
@@ -15,8 +16,8 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include "../../include/main/main.h"
-#include "../../include/parse/env.h"
+//#include "../../include/parse/parser.h"
+//#include "../../include/parse/env.h"
 
 Parser::Parser(std::shared_ptr<Lexer> lexer) : lexer(lexer) {};
 
@@ -140,18 +141,11 @@ std::shared_ptr<TreeNode> Parser::block()
 	matchLookahead("}");
 	std::cout<<"block end\n";
 
+	std::shared_ptr<BlockNode> blockNode = std::make_shared<BlockNode>(stmtsChild);
+	(blockNode->setEnv)(symbolTable);
+
 	symbolTable = prevScope;
 											//Once this scope ends, go back to the previous scope
-	/*
-	if(errorIndicator)
-	{
-		return nullptr;
-	}
-	*/
-
-	std::shared_ptr<BlockNode> blockNode = std::make_shared<BlockNode>(stmtsChild);
-
-	//emit("test emit");
 
 	return blockNode;
 
@@ -199,6 +193,8 @@ std::shared_ptr<TreeNode> Parser::decl()
 	std::shared_ptr<IdNode> idChild = std::make_shared<IdNode>(curToken->getAttribute());
 	std::shared_ptr<DeclNode> declNode = std::make_shared<DeclNode>(idChild);
 
+	(declNode->setEnv)(symbolTable);
+
 	return declNode;
 }
 
@@ -235,6 +231,8 @@ std::shared_ptr<TreeNode> Parser::factor()
 		std::cout<<"spit token in factor\n";
 		return nullptr;
 	}
+
+	(child->setEnv)(symbolTable);
 
 	return child;
 }
@@ -274,6 +272,8 @@ std::shared_ptr<TreeNode> Parser::term()
 
 	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(factorChild, termChild, op);
 
+	(opexprNode->setEnv)(symbolTable);
+
 	return opexprNode;
 }
 
@@ -304,6 +304,7 @@ std::shared_ptr<TreeNode> Parser::expr()
 
 	std::shared_ptr<OpexprNode> opexprNode = std::make_shared<OpexprNode>(termChild, exprChild, op);
 
+	(opexprNode->setEnv)(symbolTable);
 	return opexprNode;
 }
 
@@ -327,6 +328,8 @@ std::shared_ptr<TreeNode> Parser::assign()
 	std::cout<<"matching ; in assign\n";
 
 	std::shared_ptr<AssignNode> assignNode = std::make_shared<AssignNode>(idChild, exprChild);
+
+	(assignNode->setEnv)(symbolTable);
 
 	return assignNode;
 
@@ -385,6 +388,7 @@ std::shared_ptr<TreeNode> Parser::stmts()
 
 	std::shared_ptr<SeqNode> seqNode = std::make_shared<SeqNode>(child1, child2);
 
+	(seqNode->setEnv)(symbolTable);
 	return seqNode;
 
 }

@@ -1,9 +1,10 @@
 CMakeFiles/Athena.dir/src/parse/parser.cpp.o: \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/parser.cpp \
  /usr/include/stdc-predef.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/lex/lexer.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/lex/./token.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/lex/./tokenKinds.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/main.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/env.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/symbol.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/../lex/tokenKinds.h \
  /usr/include/c++/12/string \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -116,6 +117,8 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: \
  /usr/include/c++/12/bits/functional_hash.h \
  /usr/include/c++/12/bits/hash_bytes.h \
  /usr/include/c++/12/bits/basic_string.tcc \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/../lex/lexer.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/../lex/./token.h \
  /usr/include/c++/12/unordered_map \
  /usr/include/c++/12/ext/aligned_buffer.h \
  /usr/include/c++/12/bits/hashtable.h \
@@ -156,7 +159,8 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: \
  /usr/include/c++/12/bits/atomic_base.h \
  /usr/include/c++/12/bits/atomic_lockfree_defines.h \
  /usr/include/c++/12/backward/auto_ptr.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/treeNode.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/parser.h \
+ /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/../tree/treeNode.h \
  /usr/include/c++/12/fstream /usr/include/c++/12/istream \
  /usr/include/c++/12/ios /usr/include/c++/12/bits/ios_base.h \
  /usr/include/c++/12/bits/locale_classes.h \
@@ -186,11 +190,7 @@ CMakeFiles/Athena.dir/src/parse/parser.cpp.o: \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/declNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/idNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/./exprNode.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/../parse/symbol.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/opexprNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/numNode.h \
  /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/tree/assignNode.h \
- /usr/include/c++/12/iostream \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/main.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/env.h \
- /home/bhavya/cosmos/cse/projects/Athena/src/parse/../../include/main/../parse/parser.h
+ /usr/include/c++/12/iostream

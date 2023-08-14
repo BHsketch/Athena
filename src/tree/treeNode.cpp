@@ -1,4 +1,4 @@
-#include "../../include/tree/treeNode.h" 
+#include "../../include/main/main.h"
 #include <memory>
 #include <string>
 #include <fstream>
@@ -10,6 +10,11 @@ std::ofstream TreeNode::emitFile;
 
 TreeNode::TreeNode()
 {
+}
+
+void TreeNode::setEnv(std::shared_ptr<Env> curEnv)
+{
+	this->curEnv = curEnv;
 }
 
 std::string TreeNode::getIdLexeme()
