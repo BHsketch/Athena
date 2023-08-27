@@ -46,7 +46,7 @@ std::string TreeNode::lvalue(std::shared_ptr<TreeNode> expr)
 	{
 		case tokenKindObjTree.id :
 			std::cerr<<"INSIDE CASE 1\n";
-			return expr->getIdLexeme();
+			return (expr->getIdLexeme() + std::to_string((expr->curEnv)->scope));
 			break;
 		case tokenKindObjTree.expr_op :
 			std::cerr<<"parsing eror: expression not a modifiable lvalue\n";
@@ -70,7 +70,7 @@ std::string TreeNode::rvalue(std::shared_ptr<TreeNode> expr)
 	if( (expr->getExprType() == tokenKindObjTree.id))
 	{
 		std::cerr<<"INSIDE RVALUE ID CASE RETURNING "<<expr->getIdLexeme()<<"\n";
-		return expr->getIdLexeme();
+		return (expr->getIdLexeme() + std::to_string((expr->curEnv)->scope));
 
 	}else if((expr->getExprType() == tokenKindObjTree.literal_num))
 	{

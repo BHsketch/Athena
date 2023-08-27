@@ -10,7 +10,7 @@
 class TreeNode{
         public:
 		
-		std::shared_ptr<Env> curEnv;
+		std::shared_ptr<Env> curEnv = nullptr;
 		static std::ofstream emitFile;
 		static token::TokenKind tokenKindObjTree;
 																//so that inner nodes can be queried for their type by storing a variable with this number

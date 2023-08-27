@@ -315,6 +315,8 @@ std::shared_ptr<TreeNode> Parser::assign()
 	std::cout<<"in assign\n";
 
 	std::shared_ptr<IdNode> idChild = std::make_shared<IdNode>(curToken->getAttribute());	
+	(idChild->setEnv)(symbolTable);
+
 	std::shared_ptr<TreeNode> exprChild;
 
 	getToken();

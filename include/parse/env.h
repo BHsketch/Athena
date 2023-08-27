@@ -9,7 +9,7 @@ class Env {
 	public:
 
 	std::unordered_map<std::string, std::shared_ptr<Symbol>> symbolMap;
-	int scope;
+	int scope = 0;
 	std::shared_ptr<Env> prev = nullptr;
 															//mapping lexeme references to their corresponding symbol objects
 	std::shared_ptr<Lexer> lexer;

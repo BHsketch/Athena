@@ -1,5 +1,5 @@
 t1=6/3
-t2=var-t1
+t2=var2-t1
 t3=2+t2
-var=t3
-var=2
+var2=t3
+var3=2
